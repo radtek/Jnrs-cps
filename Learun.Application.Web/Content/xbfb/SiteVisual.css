@@ -1,0 +1,254 @@
+﻿body{
+margin: 0px;
+padding: 0px;
+}
+/*td{
+    border: 1px solid black;
+}*/
+#Container{
+    width:1366px;
+    margin:0 auto;/*设置整个容器在浏览器中水平居中*/
+    background:#000;
+}
+#Header{
+    height:80px;
+    width:1366px;
+    /*background:green;*/
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    font-size:40px;
+    text-align: center;
+}
+#Content{
+    height:625px;
+    margin-top:0px;
+    background:green;
+}
+
+.repng{
+    width:1366px;
+    height:368px;
+   /* background:red;*/
+     position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.repng2{
+     position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.repngT2{
+     position: absolute;
+     width:683px;
+     height:300px;
+    left: 0px;
+    top: 0px;
+}
+#logo{
+    height:75px;
+    width:248px;
+    position: absolute;
+    left:1075px;
+    top:685px;
+    /*background:#cfcfcf;*/
+}
+#clientlogo{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    background:#cfcfcf;
+}
+#bg-state{
+    height:200px;
+    width:80px;
+    position: absolute;
+    left:1245px;
+    top:285px;
+}
+.time{
+    height:25px;
+    width:150px;
+    font-size:20px;
+    text-align: center;
+    position: absolute;
+    left: 1150px;
+    top: 20px;
+
+}
+#adress_left{
+    position: absolute;
+    left: 25px;
+    top: 180px;
+}
+#top_lprod1,#top_lprod2,#top_tprod,#top_rprod1,#top_rprod2{
+    position: absolute;
+    left: 25px;
+    top: 180px;
+}
+#btm_lprod1,#btm_lprod2,#btm_tprod,#btm_rprod1,#btm_rprod2{
+    position: absolute;
+    left: 25px;
+    top: 180px;
+}
+#adress_right{
+    position: absolute;
+     left: 1110px;
+    top: 180px;
+}
+#Footer{
+    height:18px;
+    background:green;
+    margin：0 auto;
+    text-align:center;
+}
+.Clear{
+    clear:both;
+}
+.sheet1{
+    font-weight:bold;
+    font-size: 25px;
+
+}
+.sheet2{
+    width:80px;
+    font-weight:bold;
+    font-size: 25px;
+    color: red;
+}
+td{
+    border: 2px solid black;
+}
+.tableone{
+    border-collapse:collapse;
+    border: 1px solid black;
+    text-align:center;
+     height:300px;
+     width:230px;
+}
+.tabletwo{
+    border-collapse:collapse;
+    border: none;
+    text-align:center;
+     height:80px;
+     width:160px;
+}
+.tablethree{
+    border-collapse:collapse;
+    border: 1px solid black;
+    text-align:center;
+     height:400px;
+     width:230px;
+}
+.table_address1{
+    position: absolute;
+    left: 285px;
+    top:180px;
+}
+.table_address2{
+    position: absolute;
+    left: 285px;
+    top:290px;
+}
+.table_address3{
+    position: absolute;
+    left: 285px;
+    top:400px;
+}
+.table_address4{
+    position: absolute;
+    left: 285px;
+    top:510px;
+}
+.table_address5{
+    position: absolute;
+    left: 915px;
+    top:180px;
+}
+.table_address6{
+    position: absolute;
+    left: 915px;
+    top:290px;
+}
+.table_address7{
+    position: absolute;
+    left: 915px;
+    top:400px;
+}
+.table_address8{
+    position: absolute;
+    left: 915px;
+    top:510px;
+}
+.table_tlname{
+    position: absolute;
+    left: 200px;
+    top:0px;
+}
+.table_trname{
+    position: absolute;
+    left: 68px;
+    top:0px;
+}
+.table_blname{
+    position: absolute;
+    left: 200px;
+    top:-30px;
+}
+.table_brname{
+    position: absolute;
+    left: 68px;
+    top:-30px;
+}
+.table_ttext{
+    background-color:darkorange;
+    opacity:0.85;
+    border-collapse:collapse;
+    border: none;
+    text-align:center;
+    font-size:10px;
+    color:whitesmoke;
+     height:15px;
+     width:50px;
+}
+.table_addressT1{
+    position: absolute;
+    left: 120px;
+    top:85px;
+}
+.table_addressT2{
+    position: absolute;
+    left: 120px;
+    top:135px;
+}
+.table_addressT3{
+    position: absolute;
+    left: 120px;
+    top:185px;
+}
+.table_addressT4{
+    position: absolute;
+    left: 120px;
+    top:235px;
+}
+.table_addressT5{
+    position: absolute;
+    left: 245px;
+    top:85px;
+}
+.table_addressT6{
+    position: absolute;
+    left: 245px;
+    top:135px;
+}
+.table_addressT7{
+    position: absolute;
+    left: 245px;
+    top:185px;
+}
+.table_addressT8{
+    position: absolute;
+    left: 245px;
+    top:235px;
+}

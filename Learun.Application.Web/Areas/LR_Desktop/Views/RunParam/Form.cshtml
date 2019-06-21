@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "设备运行参数";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" data-table="tb_machine_info">
+        <div class="lr-form-item-title">设备名称</div>
+        <input id="machine_name" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="tb_run_info">
+        <div class="lr-form-item-title">主轴转速</div>
+        <input id="act_spindle_speed_0" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="tb_run_info">
+        <div class="lr-form-item-title">主轴倍率</div>
+        <input id="act_spindle_override_0" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="tb_run_info">
+        <div class="lr-form-item-title">进给速度</div>
+        <input id="act_feed_speed_0" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="tb_run_info">
+        <div class="lr-form-item-title">进给倍率</div>
+        <input id="act_feed_override_0" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="tb_run_info">
+        <div class="lr-form-item-title">主程序号</div>
+        <input id="main_prog_num" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="tb_run_info">
+        <div class="lr-form-item-title">采集日期</div>
+        <input id="read_time" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#read_time').trigger('change'); } })" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_Desktop/Views/RunParam/Form.js")

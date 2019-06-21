@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "停机原因反馈";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-6 lr-form-item"  data-table="tb_stop_reason_his" >
+        <div class="lr-form-item-title">设备名称<font face="宋体">*</font></div>
+        <div id="machine_id" isvalid="yes" checkexpession="NotNull" ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="tb_stop_reason_his" >
+        <div class="lr-form-item-title">停机原因<font face="宋体">*</font></div>
+        <div id="stop_reason" isvalid="yes" checkexpession="NotNull" ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_stop_reason_his" >
+        <div class="lr-form-item-title">停机原因分析</div>
+        <input id="stop_analysis" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_stop_reason_his" >
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="note" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="tb_stop_reason_his" >
+        <div class="lr-form-item-title">停机时间<font face="宋体">*</font></div>
+        <input id="stop_time" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',onpicked: function () { $('#stop_time').trigger('change'); } })"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="tb_stop_reason_his" >
+        <div class="lr-form-item-title">填报日期</div>
+        <input id="read_time" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',onpicked: function () { $('#read_time').trigger('change'); } })"   />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_LGManager/Views/StopReason/Form.js")

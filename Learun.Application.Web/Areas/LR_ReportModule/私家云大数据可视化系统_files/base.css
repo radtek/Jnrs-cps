@@ -1,0 +1,688 @@
+html {
+	width: 100%;
+	height: 100%;
+	min-width: 2560px;
+	min-height: 1340px;
+	font-family: "微软雅黑", MicrosoftYaHei, PingFang SC, Arial;
+	background-color: #161930;
+	color: #00b0ff;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+img {
+	/*display: block;*/
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.BMap_cpyCtrl {
+            display: none;
+}
+
+.anchorBL {
+    display: none;
+}
+
+.midAbsolute {	
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#globeNodes {
+	background-image: url(../imgs/texture_grid.png);
+	background-repeat: repeat;
+}
+
+#nodeChartMap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.mainLeft, .mainRight  {
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	width: 462px;
+	z-index: 2;
+}
+
+.mainLeft {
+	left: 50px;
+}
+
+.mainRight {
+	right: 50px;
+}
+
+.mainBottom {
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+}
+
+.mainBottom .card {
+	display: inline-block;
+	position: relative;
+}
+
+#deviceStat, #userStat {
+	top: 0;
+}
+
+.mainLeft .midWrap {
+	position: absolute;
+	top: 462px;
+	bottom: 272px;
+}
+
+.mainRight .midWrap {
+	position: absolute;
+	top: 462px;
+	bottom: 508px;
+}
+
+#cityRank, #globeNodes {
+	bottom: 0;
+}
+
+.card {
+	background-color: rgba(22,25,48,0.8);
+	box-shadow: 0 0 16px 4px #20a0ff inset;
+	border: 1px solid #00b0ff;
+	position: absolute;
+	text-align: left;
+}
+
+.card .light {
+	position: absolute;
+	width: 100%;
+	top: -5px;
+}
+
+.card .light.bottom {
+	position: absolute;
+	top: auto;
+	bottom: -5px;
+}
+
+.card .head {
+	background-image: linear-gradient(to bottom, rgba(0,176,255,0.4), rgba(0,176,255,0));
+}
+
+.card .head h1 {
+	background-image: url(../imgs/card_head_bg.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.card.long .head h1 {
+	background-image: url(../imgs/card_head_bg_long.png);
+}
+
+.card.smallest .head h1 {
+	background-image: url(../imgs/card_head_bg_short.png);
+}
+
+.card .head h1 {
+	font-size: 14px;
+	margin-left: 20px;
+	line-height: 50px;
+}
+
+.card .content {
+	font-size: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.card#deviceStat .content,
+.card#userStat .content {
+	position: absolute;
+	top: 0;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+
+.card .content .info .subTitle {
+	font-size: 14px;
+}
+
+.card .content .info .detail {
+	font-size: 14px;
+	color: #00ffc6;
+	margin-top: 5px;
+}
+
+.card .content .info .detail.big {
+	font-size: 30px;
+}
+
+.card .content .info .inline {
+	display: inline-block;
+}
+
+.card#deviceStat .content .infoList,
+.card#userStat .content .infoList {
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+.card#deviceStat .content .infoList .info,
+.card#userStat .content .infoList .info {
+	margin-top: 20px;
+}
+
+.card.medium {
+	width: 464px;
+	height: 460px;
+}
+
+.card.big {
+	width: 464px;
+	height: 506px;
+}
+
+.card.small {
+	width: 464px;
+	height: 270px;
+}
+
+.card.long {
+	width: 570px;
+	height: 270px;
+}
+
+.card.smallest {
+	width: 1570px;
+	height: 270px;
+}
+
+.card .circles {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: -20px;
+	right: -65px;
+}
+
+.card .circles .info {
+	color: #00ffc6;
+	height: 58px;
+	width: 100%;
+	text-align: center;
+}
+
+.card .circles .info .subTitle {
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.card .circles .info .detail.big {
+	font-size: 30px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+
+.card .circles>img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+	100% { transform: rotate(360deg) }
+}
+
+.card .circles>img:nth-child(1) {
+	opacity: 0.2;
+	animation-duration: 16s;
+}
+
+.card .circles>img:nth-child(2) {
+	opacity: 0.25;
+	animation-duration: 12s;
+}
+
+.card .circles>img:nth-child(3) {
+	opacity: 0.3;
+	animation-duration: 4s;
+}
+
+.card .circles>img:nth-child(4) {
+	opacity: 0.4;
+}
+
+.card .circles>img:nth-child(5) {
+	opacity: 0.2;
+}
+
+.card .circles .spotLight {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #00b0ff;
+	filter: blur(50px);
+}
+
+.chart.pie {
+	width: 400px;
+	height: 400px;
+}
+
+.chart.curve {
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	bottom: 0;
+}
+
+.card#devicePower .content {
+	height: 360px;
+	margin: 48px 0;
+	box-sizing: border-box;
+}
+
+.card#devicePower .content .infoList {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.card#devicePower .content .infoList .info {
+	position: absolute;
+	width: 210px;
+	text-align: center;
+}
+
+.card#devicePower .content .infoList .info:nth-child(1) {
+	left: 0;
+	top: 0;
+}
+.card#devicePower .content .infoList .info:nth-child(2) {
+	right: 0;
+	top: 0;
+}
+.card#devicePower .content .infoList .info:nth-child(3) {
+	left: 0;
+	bottom: 0;
+}
+.card#devicePower .content .infoList .info:nth-child(4) {
+	right: 0;
+	bottom: 0;
+}
+
+.card#devicePower .content .circuitWrap {
+	width: 100%;
+	height: 100%;
+}
+
+.card#devicePower .content .circuitWrap .circuitMask {
+	width: 100%;
+	height: 100%;
+	-webkit-mask: url(../imgs/circuit.png) center no-repeat;
+    -webkit-mask-size: contain;
+    mask: url(../imgs/circuit.png) center no-repeat;
+    mask-size: contain;
+}
+
+@supports (not mask-size: contain) and (not -webkit-mask-size: contain) and (not -moz-mask-size: contain) {
+    #devicePower .circuitMask { display: none; }
+}
+
+#devicePower .circuitMask:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    transform: scale(0.2) rotate(45deg);
+    animation: circuitAni 3s linear infinite;
+}
+
+@keyframes circuitAni {
+    0% { transform: scale(0.2) rotate(45deg);}
+    70% { transform: scale(0.2) rotate(45deg);}
+    80% { transform: scale(1) rotate(45deg);}
+    90% { transform: scale(1) rotate(45deg); opacity: 1;}
+    100% { transform: scale(1) rotate(45deg); opacity: 0;}
+}
+
+.card#devicePower .content .circuitWrap .circuit {
+	opacity: 0.5;
+}
+
+.card#devicePower .content .bitdisk {
+	width: 136px;
+	height: 156px;
+	box-shadow: 0 0 16px 4px #20a0ff inset;
+	background: url(../imgs/texture_grid.png);
+	background-size: 5px;
+	animation: bitdiskAni 1s ease infinite;
+}
+
+@keyframes bitdiskAni {
+    0% { opacity: 0.5}
+    50% { opacity: 1}
+    100% { opacity: 0.5}
+}
+
+.card#devicePower .content .bitdisk .dot {
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background: #00b0ff;
+	display: block;
+	position: absolute;
+}
+
+.card#devicePower .content .bitdisk .dot:nth-child(1) {
+	left: 15px;
+	top: 15px;
+}
+.card#devicePower .content .bitdisk .dot:nth-child(2) {
+	right: 15px;
+	top: 15px;
+}
+.card#devicePower .content .bitdisk .dot:nth-child(3) {
+	left: 15px;
+	bottom: 15px;
+}
+.card#devicePower .content .bitdisk .dot:nth-child(4) {
+	right: 15px;
+	bottom: 15px;
+}
+
+.card#devicePower .content .bitdiskLogo {
+	width: 290px;
+	height: 370px;
+	background-image: url(../imgs/bitdisk_logo_sprites.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: scale(0.39, 0.32);
+	animation: bitdiskLogo 2s steps(49) infinite;
+}
+
+@keyframes bitdiskLogo {
+	100% { background-position: -14210px 0; }
+}
+
+.chart.stick {
+	width: 100%;
+	height: 220px;
+}
+
+.content .sheet {
+	font-size: 12px;
+	margin: 0 40px;
+}
+
+.content .sheet .row {
+	border-bottom: 1px dashed rgba(255,255,255,0.2);
+	line-height: 50px;
+}
+
+.content .sheet .row .info {
+	word-break: keep-all;
+	white-space: nowrap;
+	color: rgba(255,255,255,0.2);
+}
+
+.content .sheet .row.multi {
+	line-height: 25px;
+	padding: 15px 0;
+}
+
+.content .sheet .row .info p {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.content .sheet .row .info p span {
+	color: #00ffc6;
+}
+
+.content .code {
+	color: #00b0ff;
+	font-size: 10px;
+	text-align: left;
+	font-family: inherit;
+	margin: 10px 40px 0;
+	line-height: 2em;
+}
+
+#marketPrice .content .info {
+	text-align: right;
+	position: absolute;
+	right: 20px;
+	top: 0;
+	z-index: 1;
+}
+
+#marketPrice .content .info .primary {
+	font-size: 12px;
+}
+
+.chart.kline {
+	width: 100%;
+	height: 220px;
+}
+
+.chart.globe {
+	width: 120%;
+	height: 456px;
+}
+
+.btn {
+	height: 50px;
+	width: 176px;
+	box-shadow: 0 0 10px 3px #20a0ff inset;
+	background-color: rgba(22,25,48,0.8);
+	position: absolute;
+	top: 50px;
+	right: 556px;
+	border: 1px solid #00b0ff;
+	color: #00ffc6;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.btn:hover:not(.disabled), .slider .icon:hover:not(.disabled) {
+	box-shadow: 0 0 16px 6px #20a0ff inset;	
+}
+
+.btn.active {
+	right: 50px;
+}
+
+.btn p {
+	background:
+		url(../imgs/card_head_bg_short.png) no-repeat 120% 115%,
+		url(../imgs/card_head_bg_short2.png) no-repeat -20% -15%;
+}
+
+/*百度地图加减号缩放控件*/
+.BMap_stdMpCtrl {
+	width: 50px!important;
+    height: auto!important;
+    bottom: auto!important;
+    right: 556px!important;
+    top: 120px!important;
+    left: auto!important;
+    position: absolute!important;
+    z-index: 1100!important;
+    text-size-adjust: none!important;    
+	text-align: center;
+	transition: all 0.3s ease;
+	user-select: none;
+}
+.BMap_stdMpCtrl div {
+	position: static!important;
+	box-sizing: border-box!important;
+}
+.BMap_stdMpCtrl .BMap_stdMpPan {
+	display: none;
+}
+
+.BMap_stdMpCtrl .BMap_stdMpZoom {
+	width: 100%!important;
+	height: 100%!important;
+	background-color: rgba(22,25,48,0.8);	
+	border: 1px solid #00b0ff;
+	padding-bottom: 15px;
+}
+
+.BMap_stdMpZoom .BMap_button {
+	width: 100%!important;
+	height: 50px!important;
+	line-height: 50px!important;
+	background-image: none!important;
+	font-size: 28px;	
+	box-shadow: 0 0 10px 3px #20a0ff inset;
+	cursor: pointer;
+	color: #00ffc6;
+	transition: all 0.3s ease;
+}
+
+.BMap_stdMpZoom .BMap_button:hover {
+	box-shadow: 0 0 16px 6px #20a0ff inset;	
+}
+
+.BMap_stdMpZoom .BMap_button:before {
+	content: '+';
+	display: block;
+	width: 100%;
+	font-size: 28px;
+	height: 100%;
+	line-height: 48px;
+}
+
+.BMap_stdMpZoom .BMap_button.BMap_stdMpZoomIn {
+	border-bottom: 1px solid #00b0ff;
+}
+
+.BMap_stdMpZoom .BMap_button.BMap_stdMpZoomOut {
+	position: absolute!important;
+	left: 0!important;
+	top: auto!important;
+	bottom: -50px!important;
+	background-color: rgba(22,25,48,0.8);	
+	border: 1px solid #00b0ff;
+	border-top: none;	
+}
+
+.BMap_stdMpZoom .BMap_button.BMap_stdMpZoomOut:before {
+	content: '-';
+}
+
+.BMap_stdMpZoom .BMap_stdMpSlider {
+	position: relative!important;
+	width: 100%!important;
+	top: auto!important;
+	margin-top: 15px;
+}
+
+.BMap_stdMpZoom .BMap_stdMpSlider div {
+	position: absolute!important;
+}
+
+.BMap_stdMpSlider .BMap_stdMpSliderBgTop {
+	height: 100%!important;
+	width: 100%;
+	left: 0;
+	background: none;
+	overflow: visible!important;
+	background: url(../imgs/scale_degree.png) no-repeat top center;
+}
+
+.BMap_stdMpSlider .BMap_stdMpSliderBgTop:before {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 1px;
+	margin-left: 20px;
+	background: #00b0ff;
+}
+
+.BMap_stdMpSlider .BMap_stdMpSliderBar {
+	background-image: none!important;
+	height: 11px;
+	background: #00ffc6!important;
+	left: 0;
+	right: 0;
+	width: 20px;
+	margin: auto;
+	cursor: default!important;
+}
+
+.BMap_stdMpSlider .BMap_stdMpSliderBar:hover {
+	box-shadow: 0 0 3px 1px #00ffc6;
+}
+
+.BMap_stdMpSlider .BMap_stdMpSliderBgBot {
+	display: none;
+}
+
+.BMap_stdMpSlider .BMap_stdMpSliderMask {
+	width: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.BMap_stdMpSlider .BMap_stdMpSliderMask:before,
+.BMap_stdMpSlider .BMap_stdMpSliderMask:after {
+	content: '';
+	display: block;
+    width: 102px;
+	height: 25px;
+	background: url(../imgs/card_head_bg_short.png) no-repeat top left;
+	background-size: cover;
+	position: absolute;
+	transform: rotate(-90deg);
+	transform-origin: right bottom;
+    right: -15px;
+    top: -40px;
+}
+
+.BMap_stdMpSlider .BMap_stdMpSliderMask:after {
+	background: url(../imgs/card_head_bg_short2.png) no-repeat top right;
+	background-size: cover;
+	transform-origin: left top;
+	right: auto;
+	top: auto;
+    left: -15px;
+    bottom: -40px;
+}

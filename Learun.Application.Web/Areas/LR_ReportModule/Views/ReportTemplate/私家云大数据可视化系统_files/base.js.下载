@@ -1,0 +1,587 @@
+$(document).ready(function(){
+
+	$('#toggle').click(function(){
+		$('.mainLeft, .mainRight, .mainBottom').fadeToggle(500);
+		$(this).toggleClass('active');
+	})
+	
+// 设备饼状图 -------------------------------------------------------
+	var deviceChartPie;
+	// $.get('url',function(result){
+	function renderDeviceChartPie() {
+
+	    deviceChartPie = echarts.init(document.getElementById('deviceChartPie'));	
+
+		let DataSeries = [
+			{value:18363, name:'在线设备'},
+		    {value:5358, name:'离线设备'}
+	    ];
+		let DataLegend = ['在线设备','离线设备']; 	
+		let dataOption = {
+			title: { text:'' },
+			legend: { data : DataLegend, },
+		    series: [{ data: DataSeries, }]
+		}
+
+		deviceChartPie.setOption(pieOption);
+		deviceChartPie.setOption(dataOption);
+	}
+	// });
+
+
+// 用户饼状图 -------------------------------------------------------
+	var userChartPie;
+	// $.get('url',function(result){
+	function renderUserChartPie() {
+
+	    userChartPie = echarts.init(document.getElementById('userChartPie'));	
+
+		let DataSeries = [
+			{value:5358, name:'日活跃用户'},
+		    {value:18568, name:'非日活跃用户'}
+	    ];
+		let DataLegend = ['日活跃用户','非日活跃用户']; 		
+		let dataOption = {
+			title: { text:'' },
+			legend: { data : DataLegend, },
+		    series: [{ data: DataSeries, }]
+		}
+
+		userChartPie.setOption(pieOption);
+		userChartPie.setOption(dataOption);
+	}
+	// });
+
+
+// 设备曲线图 -------------------------------------------------------
+	var deviceChartCurve;
+	// $.get('url',function(result){
+	function renderDeviceChartCurve() {
+
+		deviceChartCurve = echarts.init(document.getElementById('deviceChartCurve'));
+
+		let DataX = ['2018/03','2018/04','2018/05','2018/06','2018/07','2018/08'];
+		let DataY = ['57626','65868','68958','98593','144636','166856'];
+		let dataOption = {
+			title: { text:'新增设备数' },
+			tooltip: { formatter: "数量：{c}<br/>时间：{b}" },
+			xAxis: { data : DataX },
+		    series: [{ data: DataY }]
+		}
+
+		deviceChartCurve.setOption(curveOption);			
+		deviceChartCurve.setOption(dataOption);
+	}
+	// })
+
+
+// 用户曲线图 -------------------------------------------------------
+	var deviceChartCurve;
+	// $.get('url',function(result){
+	function renderUserChartCurve() {
+
+		userChartCurve = echarts.init(document.getElementById('userChartCurve'));
+
+		let DataX = ['2018/03','2018/04','2018/05','2018/06','2018/07','2018/08'];
+		let DataY = ['15626','16868','19584','48593','44636','105869'];
+		let dataOption = {
+			title: { text:'日产量分析' },
+			tooltip: { formatter: "数量：{c}<br/>时间：{b}" },
+			xAxis: { data : DataX },
+		    series: [{ data: DataY }]
+		}
+
+		userChartCurve.setOption(curveOption);			
+		userChartCurve.setOption(dataOption);
+	}
+	// })
+
+
+// 城市排行柱状图 -------------------------------------------------------
+	var cityChartStick;
+	// $.get('url',function(result){
+	function rendercityChartStick() {
+
+		cityChartStick = echarts.init(document.getElementById('cityChartStick'));
+
+		let DataX = ['8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00'];
+		let DataY = [295486,289569,257862,195869,166856,144636,98593,68958,65868,57626];
+		let dataOption = {
+			title: { text:'' },
+			tooltip: { formatter: "数量：{c}" },
+			xAxis: { data : DataX },
+			yAxis: { max: DataY[0]*1.15,},
+		    series: [{ data: DataY }]
+		}
+
+		cityChartStick.setOption(stickOption);			
+		cityChartStick.setOption(dataOption);
+	}
+	// })
+
+
+// 行情K线图 -------------------------------------------------------
+	var btrChartKline;
+	// $.get('url',function(result){
+	function renderbtrChartKline() {
+
+		btrChartKline = echarts.init(document.getElementById('btrChartKline'));
+
+		let DataX = ['16:00','17:00','18:00','19:00','20:00','21:00',];
+		let DataY = [
+	        [20, 30, 10, 35],
+	        [40, 35, 30, 55],
+	        [33, 38, 33, 40],
+	        [36, 26, 20, 32],
+	        [42, 44, 40, 54],
+	        [40, 33, 22, 44]
+        ];
+
+        function closingData(data) {//提取收盘数据
+        	let result = [];
+        	for (i in data) {
+        		result.push(data[i][3]);
+        	}
+        	return result;
+        }
+
+		let dataOption = {
+			title: { text:'' },
+			tooltip: { formatter: "{c0}<br/>{b}" },
+			xAxis: { data : DataX },
+			yAxis: { max: Math.max.apply(null,closingData(DataY))*1.6},//取最大值并乘以1.6倍，以时K线不会压到顶部
+		    series: [{ data: DataY }, { data: closingData(DataY) }]
+		}
+
+		btrChartKline.setOption(klineOption);			
+		btrChartKline.setOption(dataOption);
+	}
+	// })
+
+
+// K线图样式 -------------------------------------------------------
+	var klineOption = {	
+		color: '#00ffc7',
+		title: {
+			text: '',
+			textStyle: {
+				color: '#00b0ff',
+				fontSize: 12,
+				fontWeight: 'normal',
+	            // textBorderColor: '#ffffff',
+	            // textBorderWidth: 1,
+			},
+			padding: 0,
+			left: 20,
+			top: 10,
+		},
+		tooltip: {
+			trigger: 'axis',
+			backgroundColor: 'rgba(0,0,0,0.5)',
+			borderColor: '#00ffc7',
+			borderWidth: 1,
+			textStyle: {
+				color: '#00ffc7',
+				fontSize: 12,
+			},
+			formatter: "",
+		},		
+	    grid: {
+	        show: true,
+	        borderColor: 'transparent',
+	        backgroundColor: 'transparent',
+	        left: '30',
+	        right: '0',
+	        top: '0',
+	        bottom: '0',
+	    },
+		xAxis: {
+	        data: [],
+	        boundaryGap: true,
+	        axisLine: {
+	            lineStyle: { color: '#00b0ff'},
+	        },
+	        axisLabel:{  
+	        	show: true,
+	            textStyle:{fontSize:10},
+	            inside: true,
+		        showMinLabel: false,
+		        showMaxLabel: false,
+	        },
+	        axisTick: {
+	        	inside: true,
+	        },
+	        splitLine: {
+	            show: true,
+	            lineStyle: { 
+	            	color: 'rgba(255,255,255,0.1)',
+	            	width: 1,
+	            },
+	        }
+	    },
+		yAxis: {
+	        position: 'left',
+	        type: 'value',
+	        max: 'dataMax',
+	        axisLine: {
+	            lineStyle: { color: '#00b0ff'},
+	        },
+	        axisLabel:{  
+	            textStyle:{fontSize:10},
+		        showMinLabel: false,
+		        showMaxLabel: false,
+	            // inside: true,
+	        },
+	        axisTick: {
+	        	inside: true,
+	        },
+	        splitLine: {	            
+	            lineStyle: { 
+	            	color: 'rgba(255,255,255,0.1)',
+	            	width: 1,
+	            },
+	        }
+	    },
+	    series: [
+		    {
+		        type: 'candlestick',
+		        itemStyle: {
+		        	color: '#ff738a',
+		        	color0: '#00ffc6',
+		        	borderColor: '#ff738a',
+		        	borderColor0: '#00ffc6',
+		        	borderWidth: 1,
+		        },
+		        data: []
+		    },{
+		        type: 'line',
+		        smooth: true,
+		        lineStyle :{
+		            normal: { width: '2',}
+		        },
+		        symbol: 'none',
+		        areaStyle: {
+		            normal: {
+		            	color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+		            		{ offset: 0, color: 'rgba(0, 255, 198, 0.8)'},
+		            		{ offset: 1, color: 'rgba(0, 255, 198, 0)'}
+	            		])
+		            }
+		        },
+		        data: [],
+		    }
+	    ],
+	    markLine:{
+	    	
+	    },
+	    markLine:{
+
+	    }
+	}
+
+	renderbtrChartKline()
+
+
+// 饼状图样式 -------------------------------------------------------
+	var pieOption = {
+
+		color: [
+			new echarts.graphic.LinearGradient(1, 0, 0, 0.5, [
+        		{ offset: 0, color: '#00b0ff'},
+        		{ offset: 1, color: '#00ffc6'}
+    		]),
+    		new echarts.graphic.LinearGradient(0, 0, 1, 1, [
+        		{ offset: 0, color: 'rgba(0,0,0,0)'},
+        		{ offset: 1, color: 'rgba(0,0,0,0)'}
+    		])
+		],
+
+		title: {
+			text: '',
+			textStyle: {
+				color: '#00ffc6',
+				fontSize: 14,
+				fontWeight: 'normal',
+			},
+			padding: 0,
+			left: 10,
+			top: 25,
+		},
+
+		tooltip: {
+			show: false,
+			trigger: 'item',
+			backgroundColor: '#fff',
+			borderColor: '#928aff',
+			borderWidth: 1,
+			textStyle: {
+				color: '#928aff',
+				fontSize: 10,
+			},
+			formatter: "b：{b} <br/> c：{c}",			
+		},
+
+		legend: {
+	        data:[],
+	        show: false,
+	    },
+
+		series : [
+		    {
+		        name:'',
+		        type:'pie',
+		        radius : ['35%', '50%'],
+		        center: ['50%', '50%'],
+		        data: [],
+		        label: {
+		            normal: {
+		            	show: false,
+			        	position: 'inside',
+		                textStyle: {
+		                    color: '#fff',
+		                },
+		                formatter: '{d}%'
+		            },
+		        },
+		        labelLine: {
+		            normal: {
+		                lineStyle: {
+		                    color: '#8992a6',
+		                    type: 'dashed',
+		                },
+		                show: false,
+		            }
+		        },
+
+		        animationType: 'expansion',
+		        animationDuration: 4000,
+		        animationDelay: function (idx) {
+		            return Math.random() * 200;
+		        }
+		    }
+		]
+	};
+
+	renderDeviceChartPie();
+	renderUserChartPie();
+
+
+// 曲线图样式 -------------------------------------------------------    
+	var curveOption = {
+		color: '#00ffc7',
+		title: {
+			text: '',
+			textStyle: {
+				color: '#00b0ff',
+				fontSize: 12,
+				fontWeight: 'normal',
+	            // textBorderColor: '#ffffff',
+	            // textBorderWidth: 1,
+			},
+			padding: 0,
+			left: 20,
+			top: 10,
+		},
+		tooltip: {
+			trigger: 'axis',
+			backgroundColor: 'rgba(0,0,0,0.5)',
+			borderColor: '#00ffc7',
+			borderWidth: 1,
+			textStyle: {
+				color: '#00ffc7',
+				fontSize: 12,
+			},
+			formatter: "",
+		},
+	    grid: {
+	        show: true,
+	        borderColor: 'transparent',
+	        backgroundColor: 'transparent',
+	        left: '0',
+	        right: '0',
+	        top: '0',
+	        bottom: '0',
+	    },
+	    xAxis: {
+	        data: [],
+	        boundaryGap: false,
+	        axisLine: {
+	            lineStyle: { color: '#00b0ff'},
+	        },
+	        axisLabel:{  
+	            textStyle:{fontSize:10},
+	        	inside: true,
+		        showMinLabel: false,
+		        showMaxLabel: false,
+	        },
+	        axisTick: {
+	        	inside: true,
+	        },
+	        splitLine: {
+	            show: true,
+	            lineStyle: { 
+	            	color: 'rgba(255,255,255,0.1)',
+	            	width: 1,
+	            },
+	        }
+	    },
+	    yAxis: {
+	        position: 'right',
+	        type: 'value',
+	        max: 'dataMax',
+	        axisLine: {
+	            lineStyle: { color: '#00b0ff'},
+	        },
+	        axisLabel:{  
+	            textStyle:{fontSize:10},
+		        showMinLabel: false,
+		        showMaxLabel: false,
+	            inside: true,
+	        },
+	        axisTick: {
+	        	inside: true,
+	        },
+	        splitLine: {	            
+	            lineStyle: { 
+	            	color: 'rgba(255,255,255,0.1)',
+	            	width: 1,
+	            },
+	        }
+	    },
+	    series: [{
+	        name: '',
+	        type: 'line',
+	        lineStyle :{
+	            normal: { width: '2',}
+	        },
+	        symbolSize: 6,
+	        areaStyle: {
+	            normal: {
+	            	color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+	            		{ offset: 0, color: 'rgba(0, 255, 198, 0.8)'},
+	            		{ offset: 1, color: 'rgba(0, 255, 198, 0)'}
+            		])
+	            }
+	        },
+	        animation: true,
+	        data: [],
+	    }]
+	};
+
+	renderDeviceChartCurve();
+	renderUserChartCurve();
+
+//柱状图样式 -------------------------------------------------------
+	var stickOption = {
+		color: '#928aff',
+		title: {
+			text: '',
+			textStyle: {
+				color: '#00ffc6',
+				fontSize: 12,
+				fontWeight: 'normal',
+	            // textBorderColor: '#ffffff',
+	            // textBorderWidth: 1,
+			},
+			padding: 0,
+			left: 10,
+			top: 0,
+		},
+		tooltip: {
+			trigger: 'axis',
+			backgroundColor: 'rgba(0,0,0,0.5)',
+			borderColor: '#00ffc6',
+			borderWidth: 1,
+			textStyle: {
+				color: '#00ffc6',
+				fontSize: 12,
+			},
+			formatter: "",			
+		},
+	    grid: {
+	        show: true,
+	        borderColor: 'transparent',
+	        backgroundColor: 'transparent',
+	        left: '50',
+	        right: '10',
+	        top: '0',
+	        bottom: '0',
+	    },
+	    label: {
+	    	show: true,
+	    	position: 'top',
+	    	distance: 10,
+	    	formatter: '{b}',
+	    	fontSize: 12,
+	    	color: '#00b0ff',
+	    	textBorderWidth: '0',
+	    },
+	    xAxis: {
+	        data: [],
+	        boundaryGap: true,
+	        axisLine: {
+	            lineStyle: { color: '#00b0ff'},
+	        },
+	        axisLabel:{  
+	        	show: false,
+	            textStyle:{fontSize:10},
+	        },
+	        axisTick: {
+	        	inside: true,
+	        },
+	        splitLine: {
+	            show: true,
+	            lineStyle: { 
+	            	color: 'rgba(255,255,255,0.1)',
+	            	width: 1,
+	            },
+	        }
+	    },
+	    yAxis: {
+	        position: 'left',
+	        type: 'value',
+	        max: 'dataMax',
+	        axisLine: {
+	            lineStyle: { color: '#00b0ff'},
+	        },
+	        axisLabel:{  
+	            textStyle:{fontSize:10},
+		        showMinLabel: false,
+		        showMaxLabel: false,
+	            // inside: true,
+	        },
+	        axisTick: {
+	        	inside: true,
+	        },
+	        splitLine: {	            
+	            lineStyle: { 
+	            	color: 'rgba(255,255,255,0.1)',
+	            	width: 1,
+	            },
+	        }
+	    },
+	    series: [{
+	        name: '',
+	        type: 'bar',
+	        barWidth: '60%',
+	        itemStyle: {
+	        	normal: {
+	            	color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+	            		{ offset: 0, color: '#00ffc6'},
+	            		{ offset: 1, color: 'rgba(0,176,255,0)'}
+            		]),
+            		borderColor: '#00b0ff',
+            		borderWidth: 1,
+	            },
+	        },
+	        lineStyle :{
+	            normal: { width: '1',}
+	        },
+	        animation: true,
+	        data: [],
+	    }]
+	};
+
+	rendercityChartStick();
+
+})

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "设备运行参数";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item"  data-table="tb_machine_info" >
+        <div class="lr-form-item-title">设备名称</div>
+        <input id="machine_name" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_run_info" >
+        <div class="lr-form-item-title">主轴转速</div>
+        <input id="act_spindle_speed_0" type="text" class="form-control"  />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_RunParam/Views/LR_RunParam/Form.js")

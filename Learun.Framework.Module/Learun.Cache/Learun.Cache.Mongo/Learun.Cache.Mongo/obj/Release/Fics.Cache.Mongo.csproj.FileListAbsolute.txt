@@ -1,0 +1,17 @@
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\Fics.Cache.Mongo.dll
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\Fics.Cache.Mongo.pdb
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\DnsClient.dll
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\MongoDB.Bson.dll
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\MongoDB.Driver.Core.dll
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\MongoDB.Driver.dll
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\System.Buffers.dll
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\DnsClient.xml
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\MongoDB.Bson.xml
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\MongoDB.Driver.xml
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\MongoDB.Driver.Core.xml
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\obj\Release\Fics.Cache.Mongo.dll
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\obj\Release\Fics.Cache.Mongo.pdb
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\obj\Release\Fics.Cache.Mongo.csprojResolveAssemblyReference.cache
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\Fics.Cache.Base.dll
+D:\wkFile!!!\VS2015\3-NoSqlDLL\JFicsPlatform\Fics.Cache\Fics.Cache.Mongo\bin\Release\Fics.Cache.Base.pdb

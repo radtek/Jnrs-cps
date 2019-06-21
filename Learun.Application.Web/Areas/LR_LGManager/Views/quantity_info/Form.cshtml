@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "质量问题上报";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" style="padding:0;line-height:38px;text-align:center;font-size:20px;font-weight:bold;color:#333;" >
+        <span></span>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_quantity_info" >
+        <div class="lr-form-item-title">设备组</div>
+        <input id="group_no" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_quantity_info" >
+        <div class="lr-form-item-title">工位</div>
+        <input id="work_name" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_quantity_info" >
+        <div class="lr-form-item-title">不合格产量</div>
+        <input id="unqualified_no" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_quantity_info" >
+        <div class="lr-form-item-title">不合格原因</div>
+        <textarea id="unqualified_note" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_quantity_info" >
+        <div class="lr-form-item-title">日期</div>
+        <input id="product_time" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',onpicked: function () { $('#product_time').trigger('change'); } })"   />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_LGManager/Views/quantity_info/Form.js")

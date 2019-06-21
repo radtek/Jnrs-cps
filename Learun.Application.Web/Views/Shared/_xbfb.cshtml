@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - 雄邦压铸-大众阀板自动线项目</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!--<link href='http://fonts.useso.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
+    
+    <link href="~/Content/xbfb/24_Matrix/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/xbfb/115_enon/fonts/linecons/css/linecons.css" />
+    <link rel="stylesheet" href="~/Content/xbfb/115_enon/fonts/fontawesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="~/Content/xbfb/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/xbfb/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/xbfb/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="~/Content/xbfb/SiteXBFb.css" />
+    <link rel="stylesheet" href="~/Content/xbfb/jquery.gritter.css" />
+    <link rel="stylesheet" href="~/Content/xbfb/subpage.css" />
+    <link rel="stylesheet" href="~/Content/xbfb/SiteVisual.css" />
+
+
+
+</head>
+<body style="width:1366px;height:768px;background-color:#cfcfcf">
+    <header></header>
+    <div class="col-lg-12 col-md-12 col-sm-12 main">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" style="min-height:600px">
+                <div class="row">
+                    @RenderSection("featured", required: false)
+                    <section>
+                        @RenderBody()
+                    </section>
+                </div>
+            </div>
+        </div><!--row-->
+    </div>
+</body>
+</html>

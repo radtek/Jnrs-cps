@@ -1,0 +1,792 @@
+﻿@{
+        ViewBag.Title = "StateALine";
+    }
+
+<script src="~/Script/SiteScripts/dx.chartjs.js"></script>
+<script src="~/Script/SiteScripts/highcharts.js"></script>
+<script src="~/Script/SiteScripts/highcharts-3d.js"></script>
+<div style="width:1364px;height:4px; position: absolute;top:86px;left:0px;background:#FFFFFF;border:1px solid #FFFFFF">
+</div>
+<div style="width:1364px;height:86px; position: absolute;top:-1px;left:0px;background:#1d1c38;border:1px solid #1d1c38">
+</div>
+<div class="Header">
+    <h style="color:#FFFFFF;font-size:40px;z-index:99">南阳飞龙排气管项目可视化看板</h>
+    <div style="position:absolute;width:130px;top:0px;left:760px ;color:#FFFFFF;font-size:22px;text-align:center;">
+        <script type="text/javascript">
+            var now = new Date()
+            document.write(1900 + now.getYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate() + " "
+                + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds())
+        </script>
+    </div>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/BK3.png" height="580" width="595" style="position:absolute;z-index:8; top:120px; left:60px;">
+    <b style="position:absolute;top:80px;left:200px;font-size:30px;color:#FFFFFF">设备状态实时监控</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/timg.png" height="80" width="80" style="position:absolute;z-index:9; top:-25px; left:-350px;">
+    <b style="position:absolute;z-index:9; top:0px; left:-260px;font-size:35px;color:#0094ff">西泵股份</b>
+</div>
+<div class="Footer" style="color:#FFFFFF;font-size:16px">
+    Copyright &copy
+    <script language=Javascript>
+        var now = new Date()
+        document.write(now.getFullYear())
+    </script>
+    宁夏巨能机器人股份有限公司
+</div>
+<div class="JNRS">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/JNRS.png" height="60" width="179" style="z-index:8">
+</div>
+<div class="prodinfo">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/bk3.png" height="140" width="250" style="position:absolute;z-index:8;left:-55px;top:-20px;">
+    <b style="color:#FFFFFF;font-size:19px;">计划产量：</b>
+    <b style="color:#FFFFFF;font-size:19px;">1000</b><p /><p />
+    <b style="color:#FFFFFF;font-size:19px;">当前产量：</b>
+    <b style="color:#FFFFFF;font-size:19px;">900</b><p /><p />
+    <b style="color:#FFFFFF;font-size:19px;">完成率：</b>
+    <b style="color:#FFFFFF;font-size:19px;">90%</b><p /><p />
+</div>
+<div class="gongjian">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/bk3.png" height="140" width="250" />
+    <b style="color:#FFFFFF;font-size:19px;position:absolute;z-index:8;left:50px;top:-25px;">加工工件:******</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/pic2.png" height="100" width="150" style="position:absolute;left:40px;top:30px;transform:rotate(-15deg)">
+
+</div>
+
+<div class="xr">
+    <!--<img src="pic.png" height="300" width="400" style="z-index:8;transform:rotate(10deg)">-->
+</div>
+<div class="robot-1">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/kuka.png" height="110" width="85" style="position:absolute;top:-140px;left:-9px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Robot-1(库卡)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+
+</div>
+<div class="robot-2">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/kuka.png" height="110" width="85" style="position:absolute;top:-140px;left:-9px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Robot-2(库卡)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="robot-3">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/m20-ia.png" height="110" width="85" style="position:absolute;top:-140px;left:-9px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Robot-3(faunc)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP10-1">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Op10-1(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP10-2">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Op10-2(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP20-1">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Op10-1(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP20-2">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Op20-2(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP30-1">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;z-index:9">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Op30-1(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP30-2">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;z-index:9">Op30-2(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP40-1">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Op40-1(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP40-2">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Op40-2(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP50-1">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Op50-1(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+<div class="OP50-2">
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/jichuang.png" height="110" width="85" style="position:absolute;top:-140px;left:-20px;z-index:8">
+    <b style="position:absolute;top:-26px;left:-23px;color:#FFFFFF;font-size:15px;width:120px;">Op50-2(机床)</b>
+    <img src="~/Areas/LR_ReportModule/Views/ReportTemplate/Images/run.png" height="35" width="35">
+</div>
+
+<canvas id="barChart" height="300" width="500" style="position:absolute;top:120px;left:-60px;color:#FFF"></canvas>
+<div style="position: absolute; left:110px;top:120px; font-size: 25px;color:#FFF">
+    <b>自动线24时产量监控</b>
+</div>
+<!--柱形图-->
+<script type="text/javascript">
+    function goBarChart(dataArr) {
+        // 声明所需变量
+        var canvas, ctx;
+        // 图表属性
+        var cWidth, cHeight, cMargin, cSpace;
+        var originX, originY;
+        // 柱状图属性
+        var bMargin, tobalBars, bWidth, maxValue;
+        var totalYNomber;
+        var gradient;
+
+        // 运动相关变量
+        var ctr, numctr, speed;
+        //鼠标移动
+        var mousePosition = {};
+
+        // 获得canvas上下文
+        canvas = document.getElementById("barChart");
+        if (canvas && canvas.getContext) {
+            ctx = canvas.getContext("2d");
+        }
+        initChart(); // 图表初始化
+        drawLineLabelMarkers(); // 绘制图表轴、标签和标记
+        drawBarAnimate(); // 绘制柱状图的动画
+        //检测鼠标移动
+        var mouseTimer = null;
+        canvas.addEventListener("mousemove", function (e) {
+            e = e || window.event;
+            if (e.layerX || e.layerX == 0) {
+                mousePosition.x = e.layerX;
+                mousePosition.y = e.layerY;
+            } else if (e.offsetX || e.offsetX == 0) {
+                mousePosition.x = e.offsetX;
+                mousePosition.y = e.offsetY;
+            }
+
+            clearTimeout(mouseTimer);
+            mouseTimer = setTimeout(function () {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                drawLineLabelMarkers();
+                drawBarAnimate(true);
+            }, 10);
+        });
+
+        //点击刷新图表
+        canvas.onclick = function () {
+            initChart(); // 图表初始化
+            drawLineLabelMarkers(); // 绘制图表轴、标签和标记
+            drawBarAnimate(); // 绘制折线图的动画
+        };
+
+
+        // 图表初始化
+        function initChart() {
+            // 图表信息
+            cMargin = 30;
+            cSpace = 60;
+            cHeight = canvas.height - cMargin * 2 - cSpace;
+            cWidth = canvas.width - cMargin * 2 - cSpace;
+            originX = cMargin + cSpace;
+            originY = cMargin + cHeight;
+
+            // 柱状图信息
+            bMargin = 4;
+            tobalBars = dataArr.length;
+            bWidth = parseInt(cWidth / tobalBars - bMargin);
+            maxValue = 0;
+            for (var i = 0; i < dataArr.length; i++) {
+                var barVal = parseInt(dataArr[i][1]);
+                if (barVal > maxValue) {
+                    maxValue = barVal;
+                }
+            }
+            maxValue += 49;
+            totalYNomber = 10;
+            // 运动相关
+            ctr = 100;
+            numctr = 100;
+            speed = 1;
+
+            //柱状图渐变色
+            gradient = ctx.createLinearGradient(0, 0, 0, 300);
+            gradient.addColorStop(0, '#00FFFF');
+            gradient.addColorStop(1, '#FE9A2E');
+
+        }
+
+        // 绘制图表轴、标签和标记
+        function drawLineLabelMarkers() {
+            ctx.translate(0.5, 0.5);  // 当只绘制1像素的线的时候，坐标点需要偏移，这样才能画出1像素实线
+            ctx.font = "10px Arial";
+            ctx.lineWidth = 1;
+            ctx.fillStyle = "#80FF00";
+            ctx.strokeStyle = "#80FF00";
+            // y轴
+            drawLine(originX, originY, originX, cMargin);
+            // x轴
+            drawLine(originX, originY, originX + cWidth, originY);
+
+            // 绘制标记
+            drawMarkers();
+            ctx.translate(-0.5, -0.5);  // 还原位置
+        }
+
+        // 画线的方法
+        function drawLine(x, y, X, Y) {
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.lineTo(X, Y);
+            ctx.stroke();
+            ctx.closePath();
+            ctx.strokeStyle = "#FFFFFF";
+        }
+
+        // 绘制标记
+        function drawMarkers() {
+            ctx.strokeStyle = "#FFFFFF";
+            // 绘制 y
+            var oneVal = parseInt(maxValue / totalYNomber);
+            ctx.textAlign = "right";
+            for (var i = 0; i <= totalYNomber; i++) {
+                var markerVal = i * oneVal;
+                var xMarker = originX - 8;
+                var yMarker = parseInt(cHeight * (1 - markerVal / maxValue)) + cMargin;
+                //console.log(xMarker, yMarker+3,markerVal/maxValue,originY);
+                ctx.fillText(markerVal, xMarker, yMarker + 3, cSpace); // 文字
+                if (i > 0) {
+                    drawLine(originX, yMarker, originX + cWidth, yMarker);
+                }
+            }
+            // 绘制 x
+            ctx.textAlign = "center";
+            for (var i = 0; i < tobalBars; i++) {
+                var markerVal = dataArr[i][0];
+                var xMarker = parseInt(originX + cWidth * (i / tobalBars) + bMargin + bWidth / 5);
+                var yMarker = originY + 15;
+                ctx.fillText(markerVal, xMarker, yMarker, cSpace); // 文字
+            }
+            // 绘制标题 y
+            ctx.save();
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText("", -canvas.height / 23, cSpace + 19);
+            ctx.restore();
+            // 绘制标题 x
+            ctx.fillText("", originX + cWidth / 2, originY + cSpace / 2 + 10);
+        };
+
+        //绘制柱形图
+        function drawBarAnimate(mouseMove) {
+            for (var i = 0; i < tobalBars; i++) {
+                var oneVal = parseInt(maxValue / totalYNomber);
+                var barVal = dataArr[i][1];
+                var barH = parseInt(cHeight * barVal / maxValue * ctr / numctr);
+                var y = originY - barH;
+                var x = originX + (bWidth + bMargin) * i + bMargin;
+                drawRect(x, y, bWidth, barH, mouseMove);  //高度减一避免盖住x轴
+                ctx.fillText(parseInt(barVal * ctr / numctr), x + 5, y - 12); // 文字
+            }
+            if (ctr < numctr) {
+                ctr++;
+                setTimeout(function () {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    drawLineLabelMarkers();
+                    drawBarAnimate();
+                }, speed);
+            }
+        }
+
+        //绘制方块
+        function drawRect(x, y, X, Y, mouseMove) {
+
+            ctx.beginPath();
+            ctx.rect(x, y, X, Y);
+            if (mouseMove && ctx.isPointInPath(mousePosition.x, mousePosition.y)) { //如果是鼠标移动的到柱状图上，重新绘制图表
+                ctx.fillStyle = "red";
+            } else {
+                ctx.fillStyle = gradient;
+                ctx.strokeStyle = gradient;
+            }
+            ctx.fill();
+            ctx.closePath();
+        }
+    }
+    goBarChart(
+        [[1, 90], [2, 52], [3, 43], [4, 56], [5, 43], [6, 56], [7, 60], [8, 55], [9, 56], [10, 43], [11, 56], [12, 66], [13, 100], [14, 65], [15, 60], [16, 45], [17, 45], [18, 56], [19, 54], [20, 43], [21, 68], [22, 59], [23, 56], [24, 66]]
+    )
+</script>
+<div id="container" style="position:absolute;width:400px;top:360px;z-index:8;height: 400px; margin: 0 auto;background-color:#000000"></div>
+<script language="JavaScript">
+    $(document).ready(function () {
+        var chart = {
+            type: 'bar',
+            backgroundColor: "#2e4e7e",
+            borderColor: "red",
+
+
+        };
+        var title = {
+            text: '自动线运行时长统计',
+            style: {
+                color: "#fff",
+            }
+        };
+        var subtitle = {
+            text: ''
+        };
+        var xAxis = {
+            categories: ['Robot-1', 'Robot-2', 'Robot-3', 'OP10-1', 'OP10-2', 'OP20-1', 'OP20-2', 'OP30-1', 'OP30-2', 'OP40-1', 'OP40-2', 'OP50-1', 'OP50-2'],
+            backgroundColor: "#FFFFFF",
+            title: {
+                text: '设备名称',
+                style: {
+                    color: "#fff",
+                }
+            }
+        };
+        var yAxis = {
+            fill: "#FFFFFF",
+            min: 0,
+            title: {
+                text: '运行时长（min）',
+                style: {
+                    color: "#FFFFFF",
+                }
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        };
+        var tooltip = {
+            valueSuffix: '分钟'
+        };
+        var plotOptions = {
+            bar: {
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            series: {
+                stacking: 'normal'
+            }
+        };
+        var legend = {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 0,
+            floating: false,
+            borderWidth: 2,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        };
+        var credits = {
+            enabled: false
+        };
+
+        var series = [{
+            name: 'run 运行',
+            data: [2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000]
+        }, {
+            name: 'alarm 报警',
+            data: [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
+        }, {
+            name: 'pause 暂停',
+            data: [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
+        }, {
+            name: 'ready 空闲',
+            data: [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
+        }, {
+            name: 'stop 停机',
+            data: [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
+        }
+        ];
+
+        var json = {};
+        json.chart = chart;
+        json.title = title;
+        json.subtitle = subtitle;
+        json.tooltip = tooltip;
+        json.xAxis = xAxis;
+        json.yAxis = yAxis;
+        json.series = series;
+        json.plotOptions = plotOptions;
+        json.legend = legend;
+        json.credits = credits;
+        $('#container').highcharts(json);
+    });
+</script>
+<!--环形图-->
+
+<div id="my_container" style="position:absolute;left:1060px; width:200px;height:200px; top:300px;z-index:9">
+    <h1 style="color:#ffd800;position:absolute;top:88px;left:80px;font-size:25px;">开动率</h1>
+    <canvas id="pie_canvas"></canvas>
+</div>
+<script language="JavaScript">
+    //环形图
+    window.onload = function () {
+        var canvas = document.getElementById("pie_canvas");
+        var seriesData = [{ name: "run", value: 0.9, color: "#3CB371", label1: "开动率", label2: "80%" },
+        { name: "alarm", value: 0.1, color: "#999", label1: "停机率", label2: "20%" },
+        ]
+        var config = {
+            width: 240,
+            height: 240,
+            series: seriesData,
+
+            canvas: canvas,
+            title: "Fruit Sales",
+            callback: function (obj) {
+                console.log(obj.label1);
+            }
+        };
+        pieChart.initSettings(config);
+        pieChart.render();
+
+    }
+    var pieChart = {
+        title: "Pie Chart",
+        width: 300,
+        height: 300,
+        series: [],  //格式[{"name":"","value":"","color":"","label1":"","label2":""}]
+        chartCanvas: null,
+        callback: null,
+        legend: {
+            show: true
+        },
+        label: {
+            show: true,
+            linelength: 20,
+            linelength2: 20,
+
+
+        },
+        circle: {
+            cx: 0,
+            cy: 0,
+            radius: 0
+
+        },
+        initSettings: function (config) {
+            this.chartCanvas = config.canvas;
+            this.chartCanvas.width = config.width;
+            this.chartCanvas.height = config.height;
+            this.width = config.width;
+            this.height = config.height;
+            this.series = config.series;
+            this.title = config.title;
+            if (config.legend != undefined) {
+                this.legend.show = config.legend.show;
+            }
+            if (config.label != undefined) {
+                this.label.show = config.label.show;
+            }
+            this.callback = config.callback;
+        },
+        getRatioSum: function (j) {
+            var sum = 0;
+            for (var i = 0; i < j; i++) {
+                sum += this.series[i].value;
+            }
+            return sum;
+        },
+        getRatioHalfSumDegrees: function (index) {
+            var sum = this.getRatioSum(index);
+            sum += (this.series[index].value / 2);
+            return sum * Math.PI * 2;
+        },
+        getRatioHalfSumDegrees360: function (index) {
+            var sum = this.getRatioSum(index);
+            sum += (this.series[index].value / 2);
+            return sum * 360;
+        },
+        renderLegend: function (ctx, length) {
+        },
+        renderLabel: function (ctx, length) {
+            if (this.label.show) {
+                for (var i = 0; i < length; i++) {
+                    this.renderLabelLine(ctx, i);
+
+                }
+
+            }
+        },
+        renderLabelLine: function (ctx, index) {
+            ctx.save();
+            ctx.translate(this.width / 2, this.height / 2);
+            ctx.rotate(this.getRatioHalfSumDegrees(index));
+            ctx.strokeStyle = this.series[index].color;
+            ctx.moveTo(this.circle.radius + 1, 0);
+            ctx.lineTo(this.circle.radius + this.label.linelength, 0);
+            ctx.stroke();
+            this.renderLabelLine2(ctx, index);
+            ctx.restore();
+            ctx.fillStyle = "#FFF";
+
+        },
+        renderLabelLine2: function (ctx, index) {
+            ctx.save();
+            ctx.translate(this.circle.radius + this.label.linelength, 0);
+            var ro = this.getRatioHalfSumDegrees(index);
+            ctx.rotate(-ro);
+            var xro = this.getRatioHalfSumDegrees360(index);
+            if ((xro > 270 && xro < 360) || (xro > 0 && xro < 90)) {
+                ctx.strokeStyle = this.series[index].color;
+                ctx.moveTo(0, 0);
+                ctx.lineTo(this.label.linelength2, 0);
+                ctx.stroke();
+                ctx.fillStyle = "#FFF";
+                ctx.font = "13px Arial";
+                ctx.fillText(this.series[index].label1, 10, -4);
+                ctx.fillText(this.series[index].label2, 10, 14);
+
+            } else {
+                ctx.strokeStyle = this.series[index].color;
+                ctx.moveTo(0, 0);
+                ctx.lineTo(-this.label.linelength2, 0);
+                ctx.stroke();
+                ctx.fillStyle = "#FFF";
+                ctx.font = "13px Arial";
+                ctx.fillText(this.series[index].label1, -40, -4);
+                ctx.fillText(this.series[index].label2, -40, 14);
+
+            }
+
+            ctx.restore();
+
+        },
+        renderPie: function (ctx, length) {
+            let lastpos = pos = 0;
+            ctx.lineWidth = this.circle.radius * 0.4;
+            for (let i = 0; i < length; i++) {
+                ctx.beginPath();
+                ctx.strokeStyle = this.series[i].color;
+                pos = lastpos + Math.PI * 2 * this.series[i].value;
+                ctx.arc(this.circle.cx, this.circle.cy, this.circle.radius, lastpos, pos);
+                ctx.stroke();
+                ctx.fillStyle = "red";
+                lastpos = pos;
+            }
+
+        },
+        renderPieImage: function (ctx, length) {
+
+        },
+        renderClick: function (event, obj) {
+            var x = event.pageX;
+            var y = event.pageY;
+            var canvas = event.target;
+            var bbox = canvas.getBoundingClientRect();
+            var loc = {
+                x: x - bbox.left * (canvas.width / bbox.width),
+                y: y - bbox.top * (canvas.height / bbox.height)
+            };
+            console.log(loc);
+
+            var dx = loc.x - obj.circle.cx;
+            var dy = loc.y - obj.circle.cy;
+            var dis = Math.floor(Math.sqrt(dx * dx + dy * dy));
+            console.log("dis=" + dis + "  mRadius=" + obj.circle.radius);
+            if (dis <= obj.circle.radius * 1.2 && dis >= obj.circle.radius * 0.8) {
+                // draw tool tip text
+                var angle = Math.atan2(dy, dx);
+                if (angle <= 0) {
+                    angle = angle + 2 * Math.PI;
+                }
+                var deltaArc = 0;
+                var index = 0;
+
+                for (var i = 0; i < obj.series.length; i++) {
+                    var precent = obj.series[i].value;
+                    deltaArc += 2 * Math.PI * precent;
+                    if (angle <= deltaArc) {
+                        index = i;
+                        break;
+                    }
+                }
+                obj.callback(obj.series[index]);
+                //console.log(obj.series[index].label1);
+            }
+        },
+        render: function () {
+            this.circle.cx = this.width / 2;
+            this.circle.cy = this.height / 2;
+            this.circle.radius = (this.width - this.width * 0.5) / 2;
+            var ctx = this.chartCanvas.getContext("2d");
+            if (this.circle.radius <= 0) {
+                ctx.strokeText("请设置布局大小.");
+
+                return;
+            }
+            if (window.devicePixelRatio) {
+                this.chartCanvas.style.width = this.width + "px";
+                this.chartCanvas.style.height = this.height + "px";
+                this.chartCanvas.height = this.height * window.devicePixelRatio;
+                this.chartCanvas.width = this.width * window.devicePixelRatio;
+                ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+            }
+            var length = this.series.length;
+            this.renderLabel(ctx, length);
+            this.renderPie(ctx, length);
+            var parent = this;
+            this.chartCanvas.addEventListener('click', function (event) {
+                parent.renderClick(event, parent);
+            }, false);
+        }
+
+    }
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        refreshDataTable();
+        RefreshRealState();
+        RefreshRealDur();
+
+        setInterval(refreshDataTable, 5000);
+        setInterval(RefreshRealState, 5000);
+        setInterval(RefreshRealDur, 5000);
+    });
+
+    function refreshDataTable() {
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: "../PView/GetAProdDataTable",
+            success: procProdDataTable,
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            }
+        });
+
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: "../PView/GetAProdDataTable",
+            success: procPassProdTable,
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            }
+        });
+    }
+    function procProdDataTable(data) {
+        var target = $('#prod_num');
+        target.empty();
+
+        var strText = "";
+        strText += "<b>当前产量：</b><b style=\"color:#8B0000\">" + data.prod_num + "</b><p/><p/>"
+            + "<b>合格数量:</b><b style=\"color:#8B0000\">" + data.prod_num + "</b>";
+
+        //$('#plan_prod') = data;
+
+        target.append(strText);
+    };
+    function procPassProdTable(data) {
+        var target = $('#npass_num');
+        target.empty();
+
+        var strText = "";
+        strText += "<b>废品数量:</b><b style=\"color:#8B0000\">" + 0 + "</b><p/><p/>"
+            + "<b>合格率：</b><b style=\"color:#8B0000\">100%</b>";
+
+        target.append(strText);
+    };
+    function RefreshRealState() {
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: "../PView/GetADeviceRealState_V",
+            success: processRealData
+        });
+    }
+
+    function processRealData(data) {
+        var pic_num = data.length;
+        if (data.length < 4) {
+            pic_num = 4;
+        }
+
+        $.each(data, function (i, item) {
+            if (item.machine_name == '桁架机械手（北线）') {
+                var tar_img = $("#hangjia1");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"90\" width=\"370\">");
+            } else if (item.machine_name == 'OP10-1') {
+                var tar_img = $("#jichuang1");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"125\" width=\"143\">"
+                    + "<span style=\"position: absolute;font-family:songti;left:40px;top:135px;font-size: 15px\">OP10-A</span>");
+            } else if (item.machine_name == 'OP10-2') {
+                var tar_img = $("#jichuang2");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"125\" width=\"143\">"
+                    + "<span style=\"position: absolute;font-family:songti;left:40px;top:135px;font-size: 15px\">OP10-B</span>");
+            } else if (item.machine_name == '桁架机械手（南线）') {
+                var tar_img = $("#hangjia2");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"90\" width=\"370\">");
+            } else if (item.machine_name == 'OP10-3') {
+                var tar_img = $("#jichuang3");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"125\" width=\"143\">"
+                    + "<span style=\"position: absolute;font-family:songti;left:40px;top:135px;font-size: 15px\">OP10-C</span>");
+            } else if (item.machine_name == 'OP10-4') {
+                var tar_img = $("#jichuang4");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"125\" width=\"143\">"
+                    + "<span style=\"position: absolute;font-family:songti;left:40px;top:135px;font-size: 15px\">OP10-D</span>");
+            } else if (item.machine_name == '清洗机') {
+                var tar_img = $("#qingxiji");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/qingxiji.png\" height=\"120\" width=\"150\">");
+            } else if (item.machine_name == '关节机器人1') {
+                var tar_img = $("#jiqiren1");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"140\" width=\"190\">");
+            } else if (item.machine_name == '关节机器人2') {
+                var tar_img = $("#jiqiren2");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"140\" width=\"170\">");
+            } else if (item.machine_name == '关节机器人3') {
+                var tar_img = $("#jiqiren3");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"130\" width=\"160\">");
+            } else if (item.machine_name == 'Op20') {
+                var tar_img = $("#jichuang5");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/" + item.pic_path + "\" height=\"130\" width=\"170\">");
+            } else if (item.machine_name == '密封圈压装机') {
+                var tar_img = $("#yazhuangji");
+                tar_img.empty();
+                tar_img.append("<img src=\"~/Areas/LR_ReportModule/Views/ReportTemplate/Images/yazhuangji.png\" height=\"120\" width=\"130\" style=\"position: absolute;left:230px;top:-90px\">");
+            } else {
+            }
+        });
+    }
+    function RefreshRealDur() {
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: "../PView/GetALineRunDuration",
+            success: processRealDur
+        });
+    }
+
+    function processRealDur(data) {
+        var time_cnt = 0;
+
+        if (time_cnt == data.length) {
+            time_cnt = 0;
+        }
+
+        var tar_img = $("#work_rate");
+        tar_img.empty();
+        tar_img.append("<b>开动率</b><p/><p/><b style=\"color:#8B0000\">" + data[time_cnt].work_rate + "</b><b>%</b>");
+
+        time_cnt++;
+    }
+</script>

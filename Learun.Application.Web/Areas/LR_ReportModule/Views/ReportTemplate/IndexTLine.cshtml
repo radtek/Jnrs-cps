@@ -1,0 +1,416 @@
+﻿@{
+    Layout = "~/Views/Shared/_xbfb.cshtml";
+}
+<div id="Container">
+
+<div id="content" style="margin:0px;padding:0px">
+    <div class="row-fluid" style="background-color:#cfcfcf">
+        <div class="span" style="width: 100% !important;float:left;margin:0px;padding :0px;height:80px">
+            <div class="control-group-query" style="margin:0px;padding:0px;background-color:#cfcfcf">
+                <div id="Header">雄邦压铸-大众阀板自动线项目</div>
+                <iframe width=0 height=0 src="/LR_ReportModule/ReportTemplate/sessionKeeper"></iframe>
+                <div id="logo"><img src="../../Areas/LR_ReportModule/Images/Content/images/logo-jnrs.png" width="200" height="55" /></div>
+                <div id="clientlogo"><img src="../../Areas/LR_ReportModule/Images/Content/images/clinetlogo.png" width="200" height="60" /></div>
+
+                <div class="time" id="showtime"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid" style="padding-left:30px;margin-top:5px">
+        <div class="span" style="width: 50% !important;float:left;margin:0px;padding :0px;height:300px">
+            <div class="control-group-query" style="margin:0px;padding:0px;border:1px solid #cfcfcf">
+                <table class="span12" style="transform:scale(1);margin-left:0px;margin-top:0px;">
+                    <tr>
+                        <td style="border:0px">
+                            <img src="../../Areas/LR_ReportModule/Images/Content/images/A572T/bg-stop.png" width="683" height="300" style="margin-left:0px" />
+                            <div class="repng" id="draw_topl" width="683" height="300" style="margin-left:0px"></div>
+                            <div id="top_lprod1" style="transform:scale(0.5,0.4);margin-left:80px;margin-top:-240px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays"></td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="066ef">目标产量/日</td><td class="sheet2" id="plan_num_topl1">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_topl1">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div id="top_lprod2" style="transform:scale(0.5,0.4);margin-left:450px;margin-top:-240px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays"></td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="066gh">目标产量/日</td><td class="sheet2" id="plan_num_topl2">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_topl2">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div id="top_tprod" style="transform:scale(0.5,0.4);margin-left:-50px;margin-top:-240px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px;background-color:royalblue;color:whitesmoke">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">066日产量</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="plan_target">目标产量/日</td><td class="sheet2" id="plan_num_toplt">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_toplt">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div class="table_tlname">
+                                <div class=table_addressT1><table class=table_ttext id="a2op20-2"><tr><td colspan=2>E#op20</td></tr></table></div>
+                                <div class=table_addressT2><table class=table_ttext id="a2op20-1"><tr><td colspan=2>F#op20</td></tr></table></div>
+                                <div class=table_addressT3><table class=table_ttext id="a2op10-2"><tr><td colspan=2>F#op10</td></tr></table></div>
+                                <div class=table_addressT4><table class=table_ttext id="a2op10-1"><tr><td colspan=2>E#op10</td></tr></table></div>
+                                <div class=table_addressT5><table class=table_ttext id="a1op20-2"><tr><td colspan=2>G#op20</td></tr></table></div>
+                                <div class=table_addressT6><table class=table_ttext id="a1op20-1"><tr><td colspan=2>H#op20</td></tr></table></div>
+                                <div class=table_addressT7><table class=table_ttext id="a1op10-2"><tr><td colspan=2>H#op10</td></tr></table></div>
+                                <div class=table_addressT8><table class=table_ttext id="a1op10-1"><tr><td colspan=2>G#op10</td></tr></table></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="span" style="width: 50% !important;float:right;margin:0px;padding :0px;height:300px">
+            <div class="control-group-query" style="margin:0px;padding:0px;border:1px solid #cfcfcf">
+                <table class="span12" style="transform:scale(1);margin-left:-20px;margin-top:0px;">
+                    <tr>
+                        <td style="border:0px">
+                            <img src="../../Areas/LR_ReportModule/Images/Content/images/A475T/bg-stop.png" width="683" height="300" style="margin-left:0px;" />
+                            <div class="repng" id="draw_topr" width="683" height="300" style="margin-left:0px;clip-path:inset(0px 0px 30px 0px)"></div>
+                            <div id="top_rprod1" style="transform:scale(0.5,0.4);margin-left:-50px;margin-top:-240px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">0BH325066J</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="066cd">目标产量/日</td><td class="sheet2" id="plan_num_topr1">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_topr1">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div id="top_rprod2" style="transform:scale(0.5,0.4);margin-left:320px;margin-top:-240px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">0BH325066J</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="066ab">目标产量/日</td><td class="sheet2" id="plan_num_topr2">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_topr2">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div class="table_trname">
+                                <div class=table_addressT1><table class=table_ttext id="a2op20-2"><tr><td colspan=2>C#op20</td></tr></table></div>
+                                <div class=table_addressT2><table class=table_ttext id="a2op20-1"><tr><td colspan=2>D#op20</td></tr></table></div>
+                                <div class=table_addressT3><table class=table_ttext id="a2op10-2"><tr><td colspan=2>D#op10</td></tr></table></div>
+                                <div class=table_addressT4><table class=table_ttext id="a2op10-1"><tr><td colspan=2>C#op10</td></tr></table></div>
+                                <div class=table_addressT5><table class=table_ttext id="a1op20-2"><tr><td colspan=2>A#op20</td></tr></table></div>
+                                <div class=table_addressT6><table class=table_ttext id="a1op20-1"><tr><td colspan=2>B#op20</td></tr></table></div>
+                                <div class=table_addressT7><table class=table_ttext id="a1op10-2"><tr><td colspan=2>B#op10</td></tr></table></div>
+                                <div class=table_addressT8><table class=table_ttext id="a1op10-1"><tr><td colspan=2>A#op10</td></tr></table></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid" style="padding-left:30px">
+        <div class="span" style="width: 50% !important;float:left;margin:0px;padding :0px;height:300px">
+            <div class="control-group-query" style="margin:0px;padding:0px;border:1px solid #cfcfcf">
+                <table class="span12" style="transform:scale(1);margin-left:0px;margin-top:0px;">
+                    <tr>
+                        <td style="border:0px">
+                            <img src="../../Areas/LR_ReportModule/Images/Content/images/A570B/bg-stop.png" width="683" height="300" />
+                            <div class="repng" id="draw_btml" width="683" height="300" style="margin-left:0px;"></div>
+                            <div id="btm_lprod1" style="transform:scale(0.5,0.4);margin-left:80px;margin-top:-270px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays"></td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="065ef">目标产量/日</td><td class="sheet2" id="plan_num_btml1">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_btml1">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div id="btm_lprod2" style="transform:scale(0.5,0.4);margin-left:450px;margin-top:-270px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays"></td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="065gh">目标产量/日</td><td class="sheet2" id="plan_num_btml2">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_btml2">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div id="btm_tprod" style="transform:scale(0.5,0.4);margin-left:-50px;margin-top:-270px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px;background-color:royalblue;color:whitesmoke">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">065日产量</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="plan_target">目标产量/日</td><td class="sheet2" id="plan_num_btmlt">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_btmlt">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div class="table_blname">
+                                <div class=table_addressT1><table class=table_ttext id="a2op20-2"><tr><td colspan=2>E#op20</td></tr></table></div>
+                                <div class=table_addressT2><table class=table_ttext id="a2op20-1"><tr><td colspan=2>F#op20</td></tr></table></div>
+                                <div class=table_addressT3><table class=table_ttext id="a2op10-2"><tr><td colspan=2>F#op10</td></tr></table></div>
+                                <div class=table_addressT4><table class=table_ttext id="a2op10-1"><tr><td colspan=2>E#op10</td></tr></table></div>
+                                <div class=table_addressT5><table class=table_ttext id="a1op20-2"><tr><td colspan=2>G#op20</td></tr></table></div>
+                                <div class=table_addressT6><table class=table_ttext id="a1op20-1"><tr><td colspan=2>H#op20</td></tr></table></div>
+                                <div class=table_addressT7><table class=table_ttext id="a1op10-2"><tr><td colspan=2>H#op10</td></tr></table></div>
+                                <div class=table_addressT8><table class=table_ttext id="a1op10-1"><tr><td colspan=2>G#op10</td></tr></table></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="span" style="width: 50% !important;float:right;margin:0px;padding :0px;height:300px">
+            <div class="control-group-query" style="margin:0px;padding:0px;border:1px solid #cfcfcf">
+                <table class="span12" style="transform:scale(1);margin-left:-20px;margin-top:0px;">
+                    <tr>
+                        <td style="border:0px">
+                            <img src="../../Areas/LR_ReportModule/Images/Content/images/A472B/bg-stop.png" width="683" height="300" style="" />
+                            <div class="repng" id="draw_btmr" width="683" height="300" style="margin-left:0px;clip-path: inset(0px 0px 0px 30px round 0em)"></div>
+                            <div id="btm_rprod1" style="transform:scale(0.5,0.4);margin-left:-50px;margin-top:-270px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">0BH325065J</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="065cd">目标产量/日</td><td class="sheet2" id="plan_num_btmr1">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_btmr1">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div id="btm_rprod2" style="transform:scale(0.5,0.4);margin-left:320px;margin-top:-270px">
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">0BH325065J</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-2px">
+                                    <tr><td class="sheet1" colspan=2 id="showdays">产量统计</td></tr>
+                                </table>
+                                <table class=tableone style="height:50px;margin-bottom:-3px">
+                                    <tr><td class="sheet1" id="065ab">目标产量/日</td><td class="sheet2" id="plan_num_btmr2">500</td></tr>
+                                </table>
+                                <table class=tableone id="prod_num_btmr2">
+                                    <tr><td class="sheet1">实际产量/日</td><td class="sheet2">200</td></tr>
+                                    <tr><td class="sheet1">合格产量/日</td><td class="sheet2">190</td></tr>
+                                    <tr><td class="sheet1">报废数量/日</td><td class="sheet2">10</td></tr>
+                                    <tr><td class="sheet1">加工达成率</td><td class="sheet2">38%</td></tr>
+                                    <tr><td class="sheet1">报废率</td><td class="sheet2">5%</td></tr>
+                                    <tr><td class="sheet1">累计产量/月</td><td class="sheet2">6500</td></tr>
+                                </table>
+                            </div>
+                            <div class="table_brname">
+                                <div class=table_addressT1><table class=table_ttext id="a2op20-2"><tr><td colspan=2>C#op20</td></tr></table></div>
+                                <div class=table_addressT2><table class=table_ttext id="a2op20-1"><tr><td colspan=2>D#op20</td></tr></table></div>
+                                <div class=table_addressT3><table class=table_ttext id="a2op10-2"><tr><td colspan=2>D#op10</td></tr></table></div>
+                                <div class=table_addressT4><table class=table_ttext id="a2op10-1"><tr><td colspan=2>C#op10</td></tr></table></div>
+                                <div class=table_addressT5><table class=table_ttext id="a1op20-2"><tr><td colspan=2>A#op20</td></tr></table></div>
+                                <div class=table_addressT6><table class=table_ttext id="a1op20-1"><tr><td colspan=2>B#op20</td></tr></table></div>
+                                <div class=table_addressT7><table class=table_ttext id="a1op10-2"><tr><td colspan=2>B#op10</td></tr></table></div>
+                                <div class=table_addressT8><table class=table_ttext id="a1op10-1"><tr><td colspan=2>A#op10</td></tr></table></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="control-group-query" style="margin:0px;padding:0px;border:0px solid #cfcfcf">
+            <div id="bg-state"><img src="../../Areas/LR_ReportModule/Images/Content/images/bg-state.png" width="80" height="200" /></div>
+        </div>
+    </div>
+    <!-- Modal 6 (Long Modal)-->
+    <div class="modal fade" id="modal-6">
+        <div class="modal-dialog" style="width:500px;">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">设置目标产量</h4>
+                    <input type="text" class="form-control" style="width:60%" name="Line_Target" id="Line_Target" />
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="m_plan_num" class="control-label-query" style="float:left;padding-top:10px">目标产量/日：</label>
+                                <input type="text" class="form-control" style="width:60%" name="m_plan_num" id="m_plan_num" />
+                                <div class="form-group" style="display:none">
+                                    <label for="m_plan_prod" class="control-label-query" style="float:left;padding-top:10px">早班目标产量：</label>
+                                    <input type="text" class="form-control" style="width:60%" name="m_plan_mor" id="m_plan_mor" />
+                                </div>
+                                <div class="form-group" style="display:none">
+                                    <label for="m_plan_prod" class="control-label-query" style="float:left;padding-top:10px">中班目标产量：</label>
+                                    <input type="text" class="form-control" style="width:60%" name="m_plan_mid" id="m_plan_mid" />
+                                </div>
+                                <div class="form-group" style="display:none">
+                                    <label for="m_plan_prod" class="control-label-query" style="float:left;padding-top:10px">夜班目标产量：</label>
+                                    <input type="text" class="form-control" style="width:60%" name="m_plan_nig" id="m_plan_nig" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" value="submit" class="btn btn-success" style="width:30%" onclick="updatePlanProdNum()" id="m_submit">保存</button>
+                        <button type="button" value="reset" class="btn btn-success" data-dismiss="modal" style="width:30%" id="m_reset">重置</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    var tl1prod_num = 0;
+    var tl1plan_prod_num = 0;
+    var tl1pass_prod_num = 0;
+    var tl1prod_rate = 0;
+    var tl1tot_num = 0;
+    var tl2prod_num = 0;
+    var tl2plan_prod_num = 0;
+    var tl2pass_prod_num = 0;
+    var tl2prod_rate = 0;
+    var tl2tot_num = 0;
+    var tr1prod_num = 0;
+    var tr1plan_prod_num = 0;
+    var tr1pass_prod_num = 0;
+    var tr1prod_rate = 0;
+    var tr1tot_num = 0;
+    var tr2prod_num = 0;
+    var tr2plan_prod_num = 0;
+    var tr2pass_prod_num = 0;
+    var tr2prod_rate = 0;
+    var tr2tot_num = 0;
+    var bl1prod_num = 0;
+    var bl1plan_prod_num = 0;
+    var bl1pass_prod_num = 0;
+    var bl1prod_rate = 0;
+    var bl1tot_num = 0;
+    var bl2prod_num = 0;
+    var bl2plan_prod_num = 0;
+    var bl2pass_prod_num = 0;
+    var bl2prod_rate = 0;
+    var bl2tot_num = 0;
+    var br1prod_num = 0;
+    var br1plan_prod_num = 0;
+    var br1pass_prod_num = 0;
+    var br1prod_rate = 0;
+    var br1tot_num = 0;
+    var br2prod_num = 0;
+    var br2plan_prod_num = 0;
+    var br2pass_prod_num = 0;
+    var br2prod_rate = 0;
+    var br2tot_num = 0;
+
+    var tprod_num = 0;
+    var tplan_prod_num = 0;
+    var tpass_prod_num = 0;
+    var tprod_rate = 0;
+    var ttot_num = 0;
+    var bprod_num = 0;
+    var bplan_prod_num = 0;
+    var bpass_prod_num = 0;
+    var bprod_rate = 0;
+    var btot_num = 0;
+</script>
+<script language="JavaScript">
+    function myrefresh() {
+       // window.location.reload();
+        location.reload(true); 
+    }
+    setTimeout('myrefresh()', 1000*10); //指定10秒刷新一次
+</script>
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/jquery-1.11.1.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/bootstrap.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/gettime.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/matrix.tllineboard.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/matrix.trlineboard.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/matrix.bllineboard.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/matrix.brlineboard.js")

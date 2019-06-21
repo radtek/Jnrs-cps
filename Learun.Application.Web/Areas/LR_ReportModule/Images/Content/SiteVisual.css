@@ -1,0 +1,336 @@
+﻿body{
+margin: 0px;
+padding: 0px;
+width:1366px;
+height:768px;
+}
+    * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        #content {
+            background-color: #fff;
+            width: 1255px;
+            padding: 200px;
+            margin: 0 auto;
+            border-left: 30px solid #1D81B6;
+            border-right: 1px solid #ddd;
+            -moz-box-shadow: 0px 0px 16px #aaa;
+        }
+
+        .head {
+            position:absolute; 
+            font-family: Helvetica,Arial,Verdana;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            font-style: normal;
+            letter-spacing: 3px;
+            color: #1D81B6;
+            border-bottom: 3px solid #f0f0f0;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+            top:20px;
+            left:65px;
+            width:1250px;
+        }
+
+        .content1 {
+             position:absolute; 
+            font-family: "Trebuchet MS",sans-serif;
+            color: #1D81B6;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px #aaa;
+            left:470px;
+            top:50px;
+        }
+
+        .content2 {
+             position:absolute; 
+            font-family: "Trebuchet MS",sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            background-color: #f0f0f0;
+            clear: both;
+            color: #1D81B6;
+            text-shadow: 1px 1px 1px #fff;
+            text-align: center;         
+            width:520px;
+            height:50px;            
+           top :130px;     
+           left:160px;
+           }
+          .content3 {
+             position:absolute; 
+            font-family: "Trebuchet MS",sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            background-color: #f0f0f0;
+            clear: both;
+            color: #1D81B6;
+            text-shadow: 1px 1px 1px #fff;
+            text-align: center;            width:380px; height:50px;              top :130px;            left:850px;
+
+        }
+            .content4 {
+             position:absolute; 
+            font-family: "Trebuchet MS",sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            background-color: #f0f0f0;
+            clear: both;
+            color: #1D81B6;
+            text-shadow: 1px 1px 1px #fff;
+            text-align: center;            width:520px;  height:50px;             top :430px;            left:150px;
+        }
+        /* Table 1 Style */
+        table.table1{
+             position:absolute; 
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+    top:196px;
+    left:100px;
+}
+.table1 thead th{
+    padding:15px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.table1 thead th:empty{
+    background:transparent;
+    border:none;
+}
+.table1 tbody th{
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    background-color:#9DD929;
+    border:1px solid #93CE37;
+    border-right:3px solid #9ED929;
+    padding:0px 10px;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0.02, rgb(158,217,41)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(123,192,67))
+        );
+    background: -moz-linear-gradient(
+        left bottom,
+        rgb(158,217,41) 2%,
+        rgb(139,198,66) 51%,
+        rgb(123,192,67) 87%
+        );
+    -moz-border-radius:5px 0px 0px 5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.table1 tfoot td{
+    color: #9CD009;
+    font-size:32px;
+    text-align:center;
+    padding:10px 0px;
+    text-shadow:1px 1px 1px #444;
+}
+.table1 tfoot th{
+    color:#666;
+}
+.table1 tbody td{
+    padding:10px;
+    text-align:center;
+    background-color:#DEF3CA;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+.table1 tbody span.check::before{
+    content : url(../images/check0.png)
+}
+  .bbb{
+            position:absolute; 
+            left:810px;
+            top:200px;
+        }
+.jqr{
+position:absolute; 
+            left:810px;
+            top:200px;}
+
+  .op10 {
+            position:absolute; 
+            left:852px;
+            top:252px;
+        }
+   .op20 {
+            position:absolute; 
+            left:852px;
+            top:252px;
+        }
+    .op30 {
+            position:absolute; 
+            left:855px;
+            top:251px;
+        }
+     .op40 {
+            position:absolute; 
+            left:855px;
+            top:242px;
+        }
+     .feilong {
+         position: absolute;
+        top:54px;
+        left:70px;
+             }
+       .jnrs {
+         position: absolute;
+        top:736px;
+        left:1144px;
+        }
+        .Footer {
+          position: absolute;
+        top:750px;
+        left:590px;
+        }       
+ul, li, dl, dd, dt, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+        /*柱状图样式*/
+        .histogram-container {
+            position: absolute;
+            margin-left: 60px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            width:1050px;
+            height:240px;
+            top:470px;
+            left:45px;
+            
+        }
+
+        .histogram-bg-line {
+            border: #999 solid;
+            border-width: 0 1px 1px 1px;
+            border-right-color: #eee;
+            overflow: hidden;
+            width:600px;
+            height:200px;
+        }
+
+            .histogram-bg-line ul {
+                overflow: hidden;
+                border: #eee solid;
+                border-width: 1px 0 0 0;
+            }
+
+            .histogram-bg-line li {
+                float: left;
+                width: 20%; /*根据.histogram-bg-line下的ul里面li标签的个数来控制比例*/
+                overflow: hidden;
+            }
+
+                .histogram-bg-line li div {
+                    border-right: 1px #eee solid;
+                }
+
+        .histogram-content {
+            position: absolute;
+            left: 0px;
+            top: 0;
+            width: 80%;
+            height:100%;
+        }
+
+            .histogram-content ul {
+                height: 83%;
+            }
+
+            .histogram-content li {
+                float: left;
+                height: 100%;
+                width: 10%; /*根据直方图的个数来控制这个width比例*/
+                text-align: center;
+                position: relative;
+            }
+
+        .histogram-box {
+            position: relative;
+            display: inline-block;
+            height:100%;
+            width: 0px;
+        }
+
+        .histogram-content li a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: block;
+            width: 20px;
+        }
+
+        .histogram-content li .name {
+            position: absolute;
+            bottom: -20px;
+            left: 0px;
+            white-space: nowrap;
+            display: inline-block;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .histogram-y {
+            position: absolute;
+            left: -55px;
+            top:-300px;
+            font: 10px/0.5 verdana,arial;
+        }
+
+            .histogram-y li {
+                text-align: right;
+                width: 55px;
+                padding-right: 5px;
+                color: #333;
+            }
+
+            .histogram-bg-line li div, .histogram-y li {
+                height:100px; /*控制单元格的高度及百分比的高度，使百分数与线条对齐*/
+            }

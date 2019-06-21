@@ -1,0 +1,130 @@
+﻿@{
+    ViewBag.Title = "WorkRate";
+}
+
+<!--main-container-part-->
+<div id="content">
+<!--breadcrumbs-->
+  <div id="content-header">
+    <div style="display:block;float:right;padding-top:8px"><a href="#" title="即时运行状态" class="tip-bottom">@Html.ActionLink("返回", "Index", "Home")</a></div>
+    <div id="breadcrumb"> <a href="#" title="运行时长" class="tip-bottom"><i class="icon-home" style="color:blue"></i>@Html.ActionLink("运行时长", "WorkRate", "Home")</a></div>
+  </div>
+<!--End-breadcrumbs-->
+
+<!--Begin-form-->
+    <form class="form-horizontal" style="padding: 5px 2px 0px; border: 1px solid rgb(238, 238, 238);">
+    <div class="row-fluid">
+        <div class="span" style="width: 45% !important;">
+            <div class="control-group-query">
+                <label class="control-label-query">设备组：</label>
+                <div class="controls">
+				    <select class="query_select" id="aLine">
+					    @foreach (SiteJnrs.Models.DeviceLineNum dln in ViewData["ListDeviceLineNum"] as List<SiteJnrs.Models.DeviceLineNum>)
+                        {
+                            <option value="@dln.group_id">@dln.group_name</option>
+                        }
+				    </select>
+			    </div>
+            </div>
+        </div>
+        <div class="span" style="width: 45% !important;">
+            <div class="control-group-query">
+                <label class="control-label-query">设备号：</label>
+                <div class="controls">
+				    <select class="query_select" data-sets="" id="aDevice"></select>
+			    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span" style="width: 45% !important;">
+            <div class="control-group-query">
+                <label class="control-label-query">开始日期：</label>
+                <div class="BZcontrols">
+                  <div  data-date="" class="input-append date datepicker">
+                    <input type="text" id="startDate" name="startDate" value=""  data-date-format="yyyy-mm-dd">
+                    <span class="add-on"><i class="icon-th"></i></span> </div>
+                </div>
+            </div>
+        </div>
+        <div class="span" style="width: 45% !important;">
+            <div class="control-group-query">
+                <label class="control-label-query">结束日期：</label>
+                <div class="BZcontrols">
+                  <div  data-date="" class="input-append date datepicker">
+                    <input type="text" id="endDate" name="endDate" value=""  data-date-format="yyyy-mm-dd">
+                    <span class="add-on"><i class="icon-th"></i></span> </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn btn-success" style="margin-left: 5px;" id="btn_query">执行查询<i class="icon-search"></i></div>
+    </div>
+    </form>
+<!--End form-->
+
+<!--Chart-box-->    
+    <div class="row-fluid">
+      <div class="widget-box">
+        <div class="widget-title bg_lg"><span class="icon"><i class="icon-bar-chart" style="color:blue"></i></span>
+          <h5>运行时长分析</h5>
+          <div id="tip_note" class="tip-note"></div>
+        </div>
+        <div class="widget-content" >
+          <div class="row-fluid">
+            <div class="span6">
+                <div style="margin-left:-5px;margin-bottom:-10%;color:black"><h5>小时</h5></div>
+			    <div id="bar-gauge-2" style="height: 410px; width: 100%;"></div>
+                <div style="float:right;margin-right:15px;margin-top:-5%;color:black"><h5>日期</h5></div>
+                <div style="margin-left:10%;margin-top:10px"><H4 id="choices"></H4></div>
+            </div>
+            <div class="span4">
+			    <div id="bar-gauge-1" style="height: 410px; width: 100%;"></div>
+			    <br />
+            </div>
+            <div class="span2">
+              <ul class="sim-site-stats xe-icon" id="max_dur">
+                <li class="bg_sh" style="padding-bottom:0px"><i class="icon-star" style="color:yellowgreen"></i>
+                    <div class="progress-time progress-time-run">
+                        <div style="width:100%" class="bar"><strong style="color:whitesmoke;padding-top:5px">0</strong>
+                            <small style="color:whitesmoke">合计运行时长</small>
+                        </div></div></li>
+                <li class="bg_sh" style="padding-bottom:0px"><i class="icon-bullhorn" style="color:yellowgreen"></i>
+                    <div class="progress-time progress-time-alarm">
+                        <div style="width:100%" class="bar"><strong style="color:whitesmoke;padding-top:5px">0</strong>
+                            <small style="color:whitesmoke">合计报警时长</small>
+                        </div></div></li>
+                <li class="bg_sh" style="padding-bottom:0px"><i class="icon-asterisk" style="color:yellowgreen"></i>
+                    <div class="progress-time progress-time-pause">
+                        <div style="width:100%" class="bar"><strong style="color:whitesmoke;padding-top:5px">0</strong>
+                            <small style="color:whitesmoke">合计暂停时长</small>
+                        </div></div></li>
+                <li class="bg_sh" style="padding-bottom:0px"><i class="icon-certificate" style="color:yellowgreen"></i>
+                    <div class="progress-time progress-time-stop">
+                        <div style="width:100%" class="bar"><strong style="color:whitesmoke;padding-top:5px">0</strong>
+                            <small style="color:whitesmoke">合计停机时长</small>
+                        </div></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--End-Chart-box--> 
+</div>
+
+<!--end-main-container-part-->
+<script type="text/javascript">
+    //------------- init query -------------//
+    $(document).ready(function () {
+        var dt = new Date('@SiteJnrs.Models.ShiftInfo.ShiftToDay');
+        var dts = new Date('@SiteJnrs.Models.ShiftInfo.ShiftToDay');
+        dts.setDate(dt.getDate() - 6);
+        $('#startDate').datepicker("setDate", dts);
+        $('#endDate').datepicker("setDate", dt);
+
+        SelectLineChangeDevice();
+    });
+</script>
+<script src="~/Scripts/SiteScripts/globalize.min.js"></script>
+<script src="~/Scripts/SiteScripts/dx.chartjs.js"></script>
+<script src="~/Scripts/SiteScripts/matrix.workrate.js" charset="gbk"></script>

@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "日计划产量维护";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" style="padding:0;line-height:38px;text-align:center;font-size:20px;font-weight:bold;color:#333;" >
+        <span></span>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="tb_plan_day_data" >
+        <div class="lr-form-item-title">产线<font face="宋体">*</font></div>
+        <div id="machine_id" isvalid="yes" checkexpession="NotNull" ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="tb_plan_day_data" >
+        <div class="lr-form-item-title">计划产量<font face="宋体">*</font></div>
+        <input id="plan_day" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="tb_plan_day_data" >
+        <div class="lr-form-item-title">日期<font face="宋体">*</font></div>
+        <input id="read_time" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#read_time').trigger('change'); } })"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_LGManager/Views/Plan_Day/Form.js")

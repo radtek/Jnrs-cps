@@ -1,0 +1,843 @@
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\libeay32.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\libgcc_s_dw2-1.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\mingwm10.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ssleay32.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\wkhtmltox0.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WebApi.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\EntityFramework.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\EntityFramework.SqlServer.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Base.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.CRM.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Form.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.IM.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Organization.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Loger.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.Operat.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\MySql.Data.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\MySql.Data.Entity.EF6.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Nancy.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Newtonsoft.Json.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Base.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Factory.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Dapper.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Excel.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.OA.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Report.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Ioc.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\log4net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.OOXML.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\LumiSoft.Net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Yahoo.Yui.Compressor.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Redis.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Pechkin.Synchronized.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Pechkin.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.XLS.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.Doc.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ICSharpCode.SharpZipLib.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.OpenXmlFormats.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.OpenXml4Net.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\EcmaScript.NET.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Redis.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Interfaces.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Text.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.Pdf.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.License.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Common.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.mshtml.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Organization.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Organization.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.AppMagager.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Base.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Base.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.CRM.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.CRM.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Form.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Form.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.IM.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.IM.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Mapping.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Loger.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.Operat.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.Operat.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\EntityFramework.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\EntityFramework.SqlServer.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Nancy.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Newtonsoft.Json.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Base.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Repository.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Factory.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Dapper.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Excel.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Excel.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.OA.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.OA.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Report.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Report.dll.config
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Ioc.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\log4net.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\LumiSoft.Net.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Redis.pdb
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.XLS.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.Doc.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Redis.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Interfaces.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Text.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.Pdf.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.License.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Common.xml
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csprojResolveAssemblyReference.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CoreCompileInputs.cache
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.dll
+C:\工作区域\LeaRun.敏捷开发框架_2018\learun.adms7.pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WebApi.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\EntityFramework.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Base.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.CRM.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Form.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.IM.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Organization.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Loger.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.Operat.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\MySql.Data.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\MySql.Data.Entity.EF6.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Nancy.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Newtonsoft.Json.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Base.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Factory.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Dapper.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Excel.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.OA.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Report.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Ioc.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\log4net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.OOXML.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\LumiSoft.Net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Yahoo.Yui.Compressor.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Redis.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Pechkin.Synchronized.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Pechkin.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.XLS.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.Doc.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.OpenXmlFormats.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.OpenXml4Net.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\EcmaScript.NET.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Redis.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Interfaces.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Text.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.Pdf.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.License.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Common.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.mshtml.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Organization.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Organization.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.AppMagager.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Base.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Base.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.CRM.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.CRM.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Form.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Form.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.IM.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.IM.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Mapping.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Loger.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.Operat.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.Operat.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Util.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\EntityFramework.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Nancy.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Newtonsoft.Json.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Base.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Repository.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Factory.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Dapper.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.DataBase.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Excel.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Excel.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.OA.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.OA.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Report.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Application.Report.dll.config
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Ioc.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\log4net.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\NPOI.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\LumiSoft.Net.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Learun.Cache.Redis.pdb
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.XLS.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.Doc.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Redis.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Interfaces.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Text.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.Pdf.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\Spire.License.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\bin\ServiceStack.Common.xml
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csprojAssemblyReference.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CopyComplete
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.dll
+C:\Users\chenk\Desktop\力软_专业版201809\力软_专业版7.0\learun.adms7.pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\libeay32.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\libgcc_s_dw2-1.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\mingwm10.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ssleay32.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\wkhtmltox0.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.WebApi.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\EntityFramework.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Base.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.CRM.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Form.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.IM.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Organization.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Loger.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Util.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Util.Operat.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\MySql.Data.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\MySql.Data.Entity.EF6.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Nancy.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Newtonsoft.Json.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Cache.Base.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Cache.Factory.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Dapper.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Excel.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.OA.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Report.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Ioc.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\log4net.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\NPOI.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\NPOI.OOXML.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\LumiSoft.Net.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Yahoo.Yui.Compressor.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Cache.Redis.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Pechkin.Synchronized.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Pechkin.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Spire.XLS.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Spire.Doc.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\NPOI.OpenXmlFormats.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\NPOI.OpenXml4Net.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\EcmaScript.NET.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ServiceStack.Redis.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ServiceStack.Interfaces.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ServiceStack.Text.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Spire.Pdf.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Spire.License.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ServiceStack.Common.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.mshtml.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Organization.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Organization.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.AppMagager.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Base.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Base.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.CRM.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.CRM.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Form.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Form.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.IM.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.IM.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Mapping.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Loger.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Util.Operat.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Util.Operat.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Util.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Util.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\EntityFramework.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Nancy.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Newtonsoft.Json.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Cache.Base.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.Repository.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Cache.Factory.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Dapper.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.DataBase.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Excel.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Excel.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.OA.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.OA.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Report.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Application.Report.dll.config
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Ioc.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\log4net.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\NPOI.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\LumiSoft.Net.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Learun.Cache.Redis.pdb
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Spire.XLS.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Spire.Doc.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ServiceStack.Redis.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ServiceStack.Interfaces.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ServiceStack.Text.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Spire.Pdf.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\Spire.License.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\bin\ServiceStack.Common.xml
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csprojAssemblyReference.cache
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CopyComplete
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.dll
+C:\Users\chenk\Desktop\力软\Code\Learun.Framework V7.0 pro\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csprojResolveAssemblyReference.cache
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CoreCompileInputs.cache
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\libeay32.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\libgcc_s_dw2-1.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\mingwm10.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ssleay32.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\wkhtmltox0.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WebApi.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EntityFramework.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EntityFramework.SqlServer.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Base.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.CRM.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Form.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.IM.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Organization.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Loger.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.Operat.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MySql.Data.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MySql.Data.Entity.EF6.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Nancy.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Newtonsoft.Json.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Common.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Interfaces.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Redis.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Text.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Base.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Factory.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Dapper.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Excel.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.OA.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Report.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MongoDB.Bson.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Ioc.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\log4net.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.OOXML.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\LumiSoft.Net.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Yahoo.Yui.Compressor.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Mongo.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MongoDB.Driver.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Mongo.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MongoDB.Driver.Core.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Redis.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Pechkin.Synchronized.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Pechkin.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.XLS.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.Doc.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ICSharpCode.SharpZipLib.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.OpenXmlFormats.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.OpenXml4Net.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EcmaScript.NET.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.Pdf.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.License.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.mshtml.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Organization.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Organization.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.AppMagager.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Base.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Base.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.CRM.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.CRM.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Form.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Form.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.IM.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.IM.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Mapping.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Loger.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.Operat.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.Operat.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EntityFramework.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EntityFramework.SqlServer.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Nancy.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Newtonsoft.Json.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Common.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Redis.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Text.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Base.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Repository.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Factory.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Dapper.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Excel.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Excel.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.OA.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.OA.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Report.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Report.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Ioc.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\log4net.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\LumiSoft.Net.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Mongo.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Mongo.dll.config
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Mongo.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Redis.pdb
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.XLS.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.Doc.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.Pdf.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.License.xml
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CopyComplete
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.dll
+D:\soft\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\libeay32.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\libgcc_s_dw2-1.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\mingwm10.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ssleay32.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\wkhtmltox0.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WebApi.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EntityFramework.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EntityFramework.SqlServer.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Base.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.CRM.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Form.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.IM.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Organization.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Loger.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.Operat.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MySql.Data.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MySql.Data.Entity.EF6.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Nancy.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Newtonsoft.Json.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Common.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Interfaces.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Redis.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Text.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Base.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Factory.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Dapper.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Excel.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.OA.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Report.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MongoDB.Bson.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Ioc.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\log4net.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.OOXML.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\LumiSoft.Net.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Yahoo.Yui.Compressor.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Mongo.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MongoDB.Driver.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Mongo.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\MongoDB.Driver.Core.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Redis.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Pechkin.Synchronized.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Pechkin.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.XLS.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.Doc.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ICSharpCode.SharpZipLib.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.OpenXmlFormats.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.OpenXml4Net.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EcmaScript.NET.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.Pdf.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.License.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.mshtml.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Organization.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Organization.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.AppMagager.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Base.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Base.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.CRM.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.CRM.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Form.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Form.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.IM.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.IM.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Mapping.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Loger.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.Operat.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.Operat.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Util.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EntityFramework.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\EntityFramework.SqlServer.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Nancy.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Newtonsoft.Json.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Common.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Redis.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\ServiceStack.Text.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Base.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Repository.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Factory.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Dapper.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Excel.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Excel.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.OA.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.OA.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Report.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Application.Report.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Ioc.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\log4net.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\NPOI.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\LumiSoft.Net.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Mongo.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.DataBase.Mongo.dll.config
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Mongo.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Learun.Cache.Redis.pdb
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.XLS.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.Doc.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.Pdf.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\bin\Spire.License.xml
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csprojAssemblyReference.cache
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CoreCompileInputs.cache
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CopyComplete
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.dll
+F:\code\code\Learun7.Ultimate\Learun7.Ultimate\Code\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\libeay32.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\libgcc_s_dw2-1.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\mingwm10.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\ssleay32.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\wkhtmltox0.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.WebApi.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.WebApi.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\EntityFramework.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\EntityFramework.SqlServer.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Base.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.CRM.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Form.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.IM.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Organization.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Loger.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Util.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Util.Operat.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\MySql.Data.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\MySql.Data.Entity.EF6.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Nancy.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Newtonsoft.Json.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\ServiceStack.Common.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\ServiceStack.Interfaces.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\ServiceStack.Redis.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\ServiceStack.Text.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Cache.Base.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Cache.Factory.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Dapper.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Excel.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.OA.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Report.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\MongoDB.Bson.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Ioc.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\log4net.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\NPOI.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\NPOI.OOXML.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\LumiSoft.Net.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Yahoo.Yui.Compressor.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.Mongo.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\MongoDB.Driver.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Cache.Mongo.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\MongoDB.Driver.Core.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Cache.Redis.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Pechkin.Synchronized.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Pechkin.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Spire.XLS.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Spire.Doc.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\ICSharpCode.SharpZipLib.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\NPOI.OpenXmlFormats.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\NPOI.OpenXml4Net.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\EcmaScript.NET.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Spire.Pdf.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Spire.License.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.mshtml.dll
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Organization.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Organization.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.AppMagager.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.AppMagager.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Base.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Base.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.CRM.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.CRM.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Form.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Form.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.IM.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.IM.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Mapping.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Mapping.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.TwoDevelopment.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.WorkFlow.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.Oracle.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.SqlServer.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.MySqlEx.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Loger.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Util.Operat.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Util.Operat.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Util.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Util.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\EntityFramework.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\EntityFramework.SqlServer.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Nancy.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Nancy.Hosting.Aspnet.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Newtonsoft.Json.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\ServiceStack.Common.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\ServiceStack.Redis.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\ServiceStack.Text.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Cache.Base.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.Repository.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.Repository.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Cache.Factory.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Dapper.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Excel.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Excel.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.OA.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.OA.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Report.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Application.Report.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Ioc.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\log4net.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Microsoft.AspNet.SignalR.Client.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\NPOI.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\LumiSoft.Net.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.Mongo.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.DataBase.Mongo.dll.config
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Cache.Mongo.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Learun.Cache.Redis.pdb
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Spire.XLS.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Spire.Doc.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Spire.Pdf.xml
+F:\Jnrs--cps\Learun.Application.WebApi\bin\Spire.License.xml
+F:\Jnrs--cps\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csprojAssemblyReference.cache
+F:\Jnrs--cps\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CoreCompileInputs.cache
+F:\Jnrs--cps\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.csproj.CopyComplete
+F:\Jnrs--cps\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.dll
+F:\Jnrs--cps\Learun.Application.WebApi\obj\Debug\Learun.Application.WebApi.pdb

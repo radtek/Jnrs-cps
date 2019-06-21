@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "二维码追溯";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" style="padding:0;line-height:38px;text-align:center;font-size:20px;font-weight:bold;color:#333;" >
+        <span></span>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_product_his" >
+        <div class="lr-form-item-title">二维码</div>
+        <input id="product_ecode" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_product_his" >
+        <div class="lr-form-item-title">产品编号</div>
+        <input id="product_id" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_product_his" >
+        <div class="lr-form-item-title">工序</div>
+        <div id="stage_name"  ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_product_his" >
+        <div class="lr-form-item-title">日期</div>
+        <input id="calc_date" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',onpicked: function () { $('#calc_date').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_product_his" >
+        <div class="lr-form-item-title">采集时间</div>
+        <input id="stage_time" type="text" class="form-control"  />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_LGManager/Views/ProductEcode/Form.js")

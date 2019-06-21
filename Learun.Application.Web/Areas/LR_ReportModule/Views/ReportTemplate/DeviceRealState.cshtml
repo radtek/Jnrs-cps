@@ -1,0 +1,490 @@
+﻿<!--main-container-part-->
+<div id="content">
+    <!--breadcrumbs-->
+    <div id="content-header">
+        <div style="display:block;float:right;padding-top:8px"><a href="#" title="即时运行状态" class="tip-bottom">@Html.ActionLink("返回", "Index", "Home")</a></div>
+        <div id="breadcrumb"> <a href="#" title="设备即时状态" class="tip-bottom"><i class="icon-home" style="color:blue"></i>@Html.ActionLink("设备即时状态", "DeviceRealState", "Home")</a></div>
+        <div style="text-align:center;vertical-align:central"><h4 class="description">自动线设备实时监控</h4></div>
+    </div>
+    <!--end breadcrumbs-->
+    <!--mail-->
+    <div class="container-fluid">
+        <hr>
+        <div class="row-fluid">
+            <section class="mailbox-env">
+                <div class="row">
+                    <!-- Inbox emails -->
+                    <div class="col-md-10 mailbox-right">
+                        <div class="mail-env">
+                            <!-- mail table -->
+                            <table class="table mail-table">
+                                <!-- email list -->
+                                <tbody>
+                                    <!--Note@Html.Action("GetDeviceRealState", "PView", new { group_id = ViewBag.MinGroup })-->
+                                    <tr class="unread" id="td_state_img"></tr>
+                                    <tr class="unread" id="td_state"></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Mailbox Sidebar -->
+                    <div class="col-md-2 mailbox-left">
+                        <div class="mailbox-sidebar">
+                            <a href="#" class="btn btn-block btn-secondary btn-icon btn-icon-standalone btn-icon-standalone-right" id="AllLine">
+                                <i class="icon icon-link" id="@ViewBag.MinGroup"></i>
+                                <span>自动线</span>
+                            </a>
+                            <ul class="list-unstyled mailbox-list" id="LineNum">
+                                @foreach (SiteJnrs.Models.DeviceLineNum dln in ViewData["ListDeviceLineNum"] as List<SiteJnrs.Models.DeviceLineNum>)
+                                {
+                                    <li class="active" id="@dln.group_id@dln.sets_no">
+                                        <a href="#">@dln.group_name @dln.sets_no</a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                        <div class="btn btn-success" style="margin-left: 50px;" id="btn_export">下班打卡</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--end mail-->
+</div>
+<!--main-container-part-->
+
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/jquery-1.11.1.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/jquery.unobtrusive-ajax.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/jquery-ui-1.12.0.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/jquery-ui.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/jquery.flot.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/jquery.flot.pie.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/jquery.flot.resize.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/jquery.flot.barnumbers.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/jquery.flot.stack.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/jquery.gritter.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/jquery.peity.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/bootstrap.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/bootstrap-table.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/locales/bootstrap-table.zh-CN.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/bootstrap-datepicker.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/locales/bootstrap-datepicker.zh-CN.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/jquery.validate.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/matrix.main.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/select2.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts/SiteScripts/matrix.condition.js")
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btn_export").click(function () {
+            var read_time = "";
+            var sets_no = "SN-2";
+            RecordDurData(10, 12, sets_no, formatDate(), formatDate());
+            RecordDurData(10, 13, sets_no, formatDate(), formatDate());
+            RecordDurData(10, 14, sets_no, formatDate(), formatDate());
+            RecordDurData(10, 15, sets_no, formatDate(), formatDate());
+        });
+    });
+    var alineid = "";//zk
+    var tr_txt_ex = "";
+    function RefreshRealState(aLine) {
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            //url: "/PView/GetDeviceRealState/" + aLine,
+            url: top.$.rootUrl + '/LR_ReportModule/ReportTemplate/GetDeviceRealState/' + aLine,
+            success: processRealData
+        });
+    }
+
+    function processRealData(data) {
+        var pic_num = data.length;
+        if (data.length < 4) {
+            pic_num = 4;
+        }
+
+        var tar_img = $("#td_state_img");
+        tar_img.empty();
+        var target = $("#td_state");
+        target.empty();
+        $.each(data, function (i, item) {
+
+            var tr_txt = "";
+            //tar_img.append("<td class=\"" + item.run_class + "\" style=\"width:" + 100.0 / pic_num + "%;text-align:center\"> "
+            // + " <img class=\"device-img\" src=\"../Images/op11.png\" style=\"width:" + 850.0 / pic_num + "px\"/> "
+            //+ " <p/></td>");
+            //zk modified 201861
+            if (alineid == "" || alineid == "10SN-1") {
+                if (i == "0") {
+                    tar_img.append("<td class=\"" + item.run_class + "\" style=\"width:" + 100.0 / pic_num + "%;text-align:center\"> "
+                        + " <img class=\"device-img\" src=\"/Areas/LR_ReportModule/Images/op11.png\" style=\"width:" + 850.0 / pic_num + "px\"/> "
+                        + " <p/></td>");
+                }
+                if (i == "1") {
+                    // tar_img.append("<td class=\"" + item.run_class + "\" style=\"width:" + 100.0 / pic_num + "%;text-align:center\"> "
+                    //  + " <img class=\"device-img\" src=\"../Images/op10.png\" style=\"width:" + 850.0 / pic_num + "px\"/> "
+                    // + " <p/></td>");
+                }
+                if (i == "2") {
+                    // tar_img.append("<td class=\"" + item.run_class + "\" style=\"width:" + 100.0 / pic_num + "%;text-align:center\"> "
+                    // + " <img class=\"device-img\" src=\"../Images/op12.png\" style=\"width:" + 850.0 / pic_num + "px\"/> "
+                    // + " <p/></td>");
+                }
+                if (i == "3") {
+                    //tar_img.append("<td class=\"" + item.run_class + "\" style=\"width:" + 100.0 / pic_num + "%;text-align:center\"> "
+                    //+ " <img class=\"device-img\" src=\"../Images/op11.png\" style=\"width:" + 850.0 / pic_num + "px\"/> "
+                    // + " <p/></td>");
+                }
+            }
+            else if (alineid == "10SN-2") {
+                if (i == "0") {
+                    tar_img.append("<td class=\"" + item.run_class + "\" style=\"width:" + 100.0 / pic_num + "%;text-align:center\"> "
+                        + " <img class=\"device-img\" src=\"/Areas/LR_ReportModule/Images/煜众 LC600.jpg\" style=\"width:" + 850.0 / pic_num + "px\"/> "
+                        + " <p/></td>");
+                }
+                if (i == "1") {
+                    tar_img.append("<td class=\"" + item.run_class + "\" style=\"width:" + 100.0 / pic_num + "%;text-align:center\"> "
+                        + " <img class=\"device-img\" src=\"/Areas/LR_ReportModule/Images/哈挺GX1300.png\" style=\"width:" + 850.0 / pic_num + "px\"/> "
+                        + " <p/></td>");
+                }
+                if (i == "2") {
+                    tar_img.append("<td class=\"" + item.run_class + "\" style=\"width:" + 100.0 / pic_num + "%;text-align:center\"> "
+                        + " <img class=\"device-img\" src=\"/Areas/LR_ReportModule/Images/煜众 LC600.jpg\" style=\"width:" + 850.0 / pic_num + "px\"/> "
+                        + " <p/></td>");
+                }
+                if (i == "3") {
+                    tar_img.append("<td class=\"" + item.run_class + "\" style=\"width:" + 100.0 / pic_num + "%;text-align:center\"> "
+                        + " <img class=\"device-img\" src=\"/Areas/LR_ReportModule/Images/哈挺GX1300.png\" style=\"width:" + 850.0 / pic_num + "px\"/> "
+                        + " <p/></td>");
+                }
+            }  //end
+
+            if (item.machine_series == "S7-1200") {
+                tr_txt += " <td class=\"col-subject\"> "
+                    + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                    + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                    + "   <li><b>采集时间:</b></li>"
+                    + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                    + " </ul>"
+                    + " </td>";
+            }
+            if (item.machine_series == "CJ2M-CPU31") {
+                tr_txt += " <td class=\"col-subject\"> "
+                    + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                    + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                    + "   <li><b>采集时间:</b></li>"
+                    + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                    + " </ul>"
+                    + " </td>"
+
+            }
+            if (item.machine_series == "BR-X20") {
+                tr_txt += " <td class=\"col-subject\"> "
+                    + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                    + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                    + "   <li><b>采集时间:</b></li>"
+                    + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                    + " </ul>"
+                    + " </td>";
+            }
+            if (item.machine_series == "M-20iA") {
+                tr_txt += " <td class=\"col-subject\"> "
+                    + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                    + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                    + "   <li><b>主程序号:" + item.main_prog_num + "</b></li>"
+                    + "   <li><b>程序行号:" + item.running_prog_num + "</b></li>"
+                    + "   <li><b>采集时间:</b></li>"
+                    + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                    + " </ul>"
+                    + " </td>";
+            }
+            if (item.machine_series == "FX3G") {
+                tr_txt += " <td class=\"col-subject\"> "
+                    + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                    + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                    + "   <li><b>采集时间:</b></li>"
+                    + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                    + " </ul>"
+                    + " </td>";
+            }
+            if (item.machine_series == "E3230") {
+                tr_txt += " <td class=\"col-subject\"> "
+                    + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                    + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                    + "   <li><b>程序号:" + item.main_prog_num + "</b></li>"
+                    + "   <li><b>主轴转速:" + item.act_spindle_speed_0 + "</b></li>"
+                    + "   <li><b>主轴倍率:" + item.act_spindle_override_0 + "</b></li>"
+                    + "   <li><b>进给速度:" + item.act_feed_speed_0 + "</b></li>"
+                    + "   <li><b>进给倍率:" + item.act_feed_override_0 + "</b></li>"
+                    + "   <li><b>采集时间:</b></li>"
+                    + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                    + " </ul>"
+                    + " </td>";
+            }
+            if (item.machine_series == "0i-TD") {
+                RefreshDurData(item.group_id, item.machine_id, item.sets_no, formatDate(), formatDate());
+                ReShiftProdNum(item.group_id, item.machine_id, formatDate(), formatDate());
+                tr_txt += " <td class=\"col-subject\"> "
+                    + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                    + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                    + "   <li><b>程序号:" + item.main_prog_num + "</b></li>"
+                    + "   <li><b>运行行号:" + item.running_prog_num + "</b></li>"
+                    + "   <li><b>主轴转速:" + item.act_spindle_speed_0 + "</b></li>"
+                    + "   <li><b>主轴倍率:" + item.act_spindle_override_0 + "</b></li>"
+                    + "   <li><b>进给速度:" + item.act_feed_speed_0 + "</b></li>"
+                    + "   <li><b>进给倍率:" + item.act_feed_override_0 + "</b></li>"
+                    + tr_txt_ex
+                    + tr_txt_cl
+                    + "   <li><b>采集时间:</b></li>"
+                    + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                    + " </ul>"
+                    + " </td>";
+            }
+            if (item.machine_series == "F32i-B") {
+                tr_txt += " <td class=\"col-subject\"> "
+                    + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                    + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                    + "   <li><b>程序号:" + item.main_prog_num + "</b></li>"
+                    + "   <li><b>运行行号:" + item.running_prog_num + "</b></li>"
+                    + "   <li><b>主轴转速:" + item.act_spindle_speed_0 + "</b></li>"
+                    + "   <li><b>主轴倍率:" + item.act_spindle_override_0 + "</b></li>"
+                    + "   <li><b>进给速度:" + item.act_feed_speed_0 + "</b></li>"
+                    + "   <li><b>进给倍率:" + item.act_feed_override_0 + "</b></li>"
+                    + "   <li><b>采集时间:</b></li>"
+                    + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                    + " </ul>"
+                    + " </td>";
+            }
+            if (item.machine_series == "") {
+                if ((alineid == "" || alineid == "10SN-1") && i != "0") {
+                    tr_txt += " <td style=\"border-color:#fff;\" class=\"col-subject;\"> "
+                        + " </td>";
+                }
+                else {
+                    tr_txt += " <td class=\"col-subject\"> "
+                        + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                        + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                        + "   <li><b>采集时间:</b></li>"
+                        + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                        + " </ul>"
+                        + " </td>";
+                }
+            }
+            target.append(tr_txt);
+        });
+
+    }
+    //setInterval(RefreshRealState, 5000);
+    //setTimeout(test, 2000);
+
+    var tLine = document.getElementById("LineNum");
+    if (tLine.childElementCount > 0) {
+        RefreshRealState(tLine.firstElementChild.getAttribute("id"));
+    }
+    var setTime = window.setInterval(function () {
+        var aLine = document.getElementById("LineNum");
+        if (aLine.childElementCount > 0) {
+            RefreshRealState(aLine.firstElementChild.getAttribute("id"));
+        }
+    }, 3000);
+
+    jQuery('#AllLine>i').click(function () {
+        var aLine = this.id;
+        RefreshRealState(aLine);
+    });
+
+    jQuery('#LineNum>li').click(function () {
+        //alert(this.id);
+        var aLine = this.id;
+        alineid = aLine;
+        RefreshRealState(aLine);
+
+        clearInterval(setTime);
+        setTime = window.setInterval(function () {
+            RefreshRealState(aLine);
+        }, 3000);
+    });
+
+    function RefreshDurData(group_id, machine_id, sets_no, startDate, endDate) {
+        //alert(startDate);
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            data: {
+                group_id: group_id,
+                machine_id: machine_id,
+                sets_no: sets_no,
+                start_date: startDate,
+                end_date: endDate
+            },
+            //url: "/PView/GetTotSecDurSeq_His",
+            url: top.$.rootUrl + '/LR_ReportModule/ReportTemplate/GetTotSecDurSeq_His',
+            async: false,
+            success: processDurData
+            //complete: processNoteDefine
+        });
+    }
+    function processDurData(data) {
+        //alert(data.totDurSeque.run_duration);
+        //圆环
+        var hour1 = 0;
+        var min1 = 0;
+        if (data.totDurSeque.run_duration != null && data.totDurSeque.run_duration > 0) {
+            hour1 = Math.floor(data.totDurSeque.run_duration / 3600);
+            min1 = Math.ceil((data.totDurSeque.run_duration % 3600) / 60);
+        }
+        var hour2 = 0;
+        var min2 = 0;
+        if (data.totDurSeque.alarm_duration != null && data.totDurSeque.alarm_duration > 0) {
+            hour2 = Math.floor(data.totDurSeque.alarm_duration / 3600);
+            min2 = Math.ceil((data.totDurSeque.alarm_duration % 3600) / 60);
+        }
+        var hour3 = 0;
+        var min3 = 0;
+        if (data.totDurSeque.pause_duration != null && data.totDurSeque.pause_duration > 0) {
+            hour3 = Math.floor(data.totDurSeque.pause_duration / 3600);
+            min3 = Math.ceil((data.totDurSeque.pause_duration % 3600) / 60);
+        }
+        var hour4 = 0;
+        var min4 = 0;
+        if (data.totDurSeque.stop_duration != null && data.totDurSeque.stop_duration > 0) {
+            hour4 = Math.floor(data.totDurSeque.stop_duration / 3600);
+            min4 = Math.ceil((data.totDurSeque.stop_duration % 3600) / 60);
+        }
+        //dataset.length = 0;
+        //var dpos = data.listSecDurSeque.length - 1;
+        //$.each(data.listSecDurSeque, function (i, item) {
+
+        //    if (i < dpos) {
+        //        var calc_date = '';
+        //        if (data.listSecDurSeque.length > 15 && item.calc_date.length > 6) {
+        //            calc_date = item.calc_date.substring(6, 8);
+        //        } else if (item.calc_date.length > 6) {
+        //            calc_date = item.calc_date.substring(4, 8);
+        //        } else {
+        //            calc_date = item.calc_date;
+        //        }
+        //        item.calc_date = calc_date;
+        //        dataset.push(item);
+        //    }
+        //});
+        tr_txt_ex = "   <li><b>运行时长:" + hour1 + "小时" + min1 + "分钟" + "</b></li>"
+            + "   <li><b>暂停时长:" + hour3 + "小时" + min3 + "分钟" + "</b></li>"
+            + "   <li><b>停机时长:" + hour4 + "小时" + min4 + "分钟" + "</b></li>";
+
+    }
+    function formatDate() {
+        var date = new Date();
+
+        var year = date.getFullYear(),
+            month = date.getMonth() + 1,//月份是从0开始的
+            day = date.getDate(),
+            hour = date.getHours(),
+            min = date.getMinutes(),
+            sec = date.getSeconds();
+        var newTime = year + '-' +
+            (month < 10 ? '0' + month : month) + '-' +
+            (day < 10 ? '0' + day : day);
+
+        return newTime;
+    }
+    function ReShiftProdNum(group_id, machine_id, startDate, endDate) {
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            data: {
+                group_id: group_id,
+                machine_id: machine_id,
+                start_date: startDate,
+                end_date: endDate
+            },
+            //url: "/PView/GetShiftProdNum_His",
+            url: top.$.rootUrl + '/LR_ReportModule/ReportTemplate/GetShiftProdNum_His',
+            async: false,
+            success: procShiftProdNum
+        });
+    }
+
+    function procShiftProdNum(data) {
+        $.each(data, function (i, item) {
+            //alert(item.prod_num);
+            tr_txt_cl = "   <li><b>当前产量:" + item.prod_num + "</b></li>";
+        });
+
+    }
+    function RecordDurData(group_id, machine_id, sets_no, startDate, endDate) {
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            data: {
+                group_id: group_id,
+                machine_id: machine_id,
+                sets_no: sets_no,
+                start_date: startDate,
+                end_date: endDate
+            },
+            //url: "/PView/GetTotSecDurSeq_His",
+            url: top.$.rootUrl + '/LR_ReportModule/ReportTemplate/GetTotSecDurSeq_His',
+            async: false,
+            success: function (data) {
+                processRecordDurData(data, machine_id);
+            }
+            //complete: processNoteDefine
+        });
+    }
+    function processRecordDurData(data, machine_id) {
+        //alert(machine_id);
+        //圆环
+        var hour1 = 0;
+        var min1 = 0;
+        if (data.totDurSeque.run_duration != null && data.totDurSeque.run_duration > 0) {
+            hour1 = Math.floor(data.totDurSeque.run_duration / 3600);
+            min1 = Math.ceil((data.totDurSeque.run_duration % 3600) / 60);
+        }
+        var hour2 = 0;
+        var min2 = 0;
+        if (data.totDurSeque.alarm_duration != null && data.totDurSeque.alarm_duration > 0) {
+            hour2 = Math.floor(data.totDurSeque.alarm_duration / 3600);
+            min2 = Math.ceil((data.totDurSeque.alarm_duration % 3600) / 60);
+        }
+        var hour3 = 0;
+        var min3 = 0;
+        if (data.totDurSeque.pause_duration != null && data.totDurSeque.pause_duration > 0) {
+            hour3 = Math.floor(data.totDurSeque.pause_duration / 3600);
+            min3 = Math.ceil((data.totDurSeque.pause_duration % 3600) / 60);
+        }
+        var hour4 = 0;
+        var min4 = 0;
+        if (data.totDurSeque.stop_duration != null && data.totDurSeque.stop_duration > 0) {
+            hour4 = Math.floor(data.totDurSeque.stop_duration / 3600);
+            min4 = Math.ceil((data.totDurSeque.stop_duration % 3600) / 60);
+        }
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            data: {
+                group_id: 10,
+                machine_id: machine_id,
+                sets_no: "sets_no",
+                start_date: "",
+                end_date: "",
+                Run_time: hour1 + "小时" + min1 + "分钟",
+                Stop_time: hour4 + "小时" + min4 + "分钟",
+                Free_time: hour3 + "小时" + min3 + "分钟"
+            },
+            //url: "/PView/RecordSecDurSeq_His",
+            url: top.$.rootUrl + '/LR_ReportModule/ReportTemplate/RecordSecDurSeq_His',
+            async: false
+        });
+    }
+</script>
+
+@Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content/bootstrap.css")
+@Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content/bootstrap.min.css")
+@Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content/SiteJnrs.css")
+@Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content/bootstrap-responsive.min.css")
+@Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content/jquery.gritter.css")
+@Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content/subpage.css")
+@Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content/fullcalendar.css")
+@Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content/themes/base/jquery-ui.css")

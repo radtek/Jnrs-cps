@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "保养工单维护";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item" data-table="tb_plan_cycle_exe_data">
+        <div class="lr-form-item-title">工单号</div>
+        <input id="id" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="tb_plan_cycle_data">
+        <div class="lr-form-item-title">计划名称</div>
+        <input id="plan_maintain_name" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="tb_plan_cycle_exe_data">
+        <div class="lr-form-item-title">设备名称</div>
+        <input id="machine_id" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="tb_plan_cycle_exe_data">
+        <div class="lr-form-item-title">保养类型</div>
+        <input id="maintenance_id" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="tb_plan_cycle_exe_data">
+        <div class="lr-form-item-title">开始日期</div>
+        <input id="begin_date" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#begin_date').trigger('change'); } })" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="tb_plan_cycle_exe_data">
+        <div class="lr-form-item-title">截止日期</div>
+        <input id="end_date" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#end_date').trigger('change'); } })" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="tb_plan_cycle_exe_data">
+        <div class="lr-form-item-title">保养人</div>
+        <input id="executor" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="tb_plan_cycle_exe_data">
+        <div class="lr-form-item-title">完成日期</div>
+        <input id="complete_date" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#complete_date').trigger('change'); } })" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="tb_plan_cycle_exe_data">
+        <div class="lr-form-item-title">完成情况<font face="宋体">*</font></div>
+        <textarea id="complete_spec" class="form-control" style="height:100px;" isvalid="yes" checkexpession="NotNull"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="tb_plan_cycle_exe_data">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="remark" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_LGManager/Views/workOrder/Form.js")

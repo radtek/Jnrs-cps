@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JNRS智能产线可视化系统</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/_all-skins.min.css")
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/AdminLTE.css")
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/bootstrap-datepicker.min.css")
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/bootstrap.min.css")
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/bootstrap3-wysihtml5.min.css")
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/daterangepicker.css")
+
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/font-awesome.min.css")
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/ionicons.min.css")
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/dataTables.bootstrap.min.css")
+
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/jquery-jvectormap.css")
+    @Html.AppendCssFile("/Areas/LR_ReportModule/Views/ReportTemplate/Content1/morris.css")
+    @Html.AppendCssFile("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic")
+</head>
+<body style="background-color:rgba(22, 25, 48, 1);height:100%;">
+    <div>
+        <section class="content">
+            <div class="box-header with-border" style="color:rgb(0, 176, 255)">
+                <h3 class="box-title"><i class="fa fa-signal" style="font-size:1.2em"></i>&nbsp;设备即时状态统计</h3>
+                <div class="box-tools pull-right">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="info-box" style="color:rgb(0, 176, 255)">
+                        <span class="info-box-icon bg-green"><i class="fa fa-play-circle-o"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">运行中设备</span>
+                            <span class="info-box-number" id="td_state1">2</span>
+                            <span class="description-percentage text-green"><i class="fa fa-caret-up"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="info-box" style="color:rgb(0, 176, 255)">
+                        <span class="info-box-icon bg-red"><i class="fa fa-exclamation-triangle"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">报警中设备</span>
+                            <span class="info-box-number" id="td_state4">2</span>
+                            <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="info-box" style="color:rgb(0, 176, 255)">
+                        <span class="info-box-icon bg-orange"><i class="fa fa-cogs"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">暂停中设备</span>
+                            <span class="info-box-number" id="td_state3">2</span>
+                            <span class="description-percentage text-green"><i class="fa fa-caret-up"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="info-box" style="color:rgb(0, 176, 255)">
+                        <span class="info-box-icon bg-blue"><i class="fa fa-exclamation-triangle"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">空闲中设备</span>
+                            <span class="info-box-number" id="td_state5">2</span>
+                            <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="info-box" style="color:rgb(0, 176, 255)">
+                        <span class="info-box-icon bg-gray"><i class="fa fa-clock-o"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">停机中设备</span>
+                            <span class="info-box-number" id="td_state2">2</span>
+                            <span class="description-percentage text-green"><i class="fa fa-caret-up"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-header with-border" style="color:rgb(0, 176, 255)">
+                <h3 class="box-title"><i class="fa fa-sun-o" style="font-size:1.2em"></i>&nbsp;设备详细参数 <small> 共计7台设备</small></h3>
+                <div class="box-tools pull-right">
+                </div>
+            </div>
+            <div id="td_state" style="background-color:rgba(22, 25, 48, 1);">
+                </div>
+        </section>
+    </div>
+    <div class="control-sidebar-bg"></div>
+</body>
+</html>
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/jquery.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/jquery-ui.min.js")
+<script>
+    $.widget.bridge('uibutton', $.ui.button);
+</script>
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/bootstrap.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/jquery.dataTables.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/dataTables.bootstrap.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/raphael.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/morris.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/jquery.sparkline.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/jquery-jvectormap-1.2.2.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/jquery-jvectormap-world-mill-en.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/jquery.knob.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/jquery.sparkline.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/moment.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/daterangepicker.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/bootstrap-datepicker.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/bootstrap3-wysihtml5.all.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/jquery.slimscroll.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/fastclick.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/adminlte.min.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/dashboard.js")
+@Html.AppendJsFile("/Areas/LR_ReportModule/Views/ReportTemplate/Scripts1/demo.js")
+<script type="text/javascript">
+    $(document).ready(function () {
+        var aLine = "";
+        RefreshRealState(aLine);
+        RefreshRealNum();
+    });
+    function RefreshRealState(aLine) {
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: 'GetDeviceRealState/' + aLine,
+            success: processRealData
+        });
+    }
+    function RefreshRealNum() {
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: 'GetRunNumData',
+            success: processRealNum
+        });
+    }
+    function processRealData(data) {
+        var target = $("#td_state");
+        target.empty();
+        var datajson = eval('(' + data + ')');
+        var tr_txt = "<div class=\"box\"  style=\"background-color:rgba(22, 25, 48, 1);\"><div class=\"row\">";
+
+        $.each(datajson, function (i, item) {
+          
+            /*
+                tr_txt += " <td class=\"col-subject\"> "
+                    + " <ul><li><b>设 备 组:" + item.group_name + "</b></li><li><b>机器名称:" + item.machine_name + "</b></li>"
+                    + "   <li><b>机器编号:" + item.machine_number + "</b><hr style=\"margin-left:-30px;margin-top:5px;margin-bottom:5px;\"/></li>"
+                    + "   <li><b>程序号:" + item.main_prog_num + "</b></li>"
+                    + "   <li><b>主轴转速:" + item.act_spindle_speed_0 + "</b></li>"
+                    + "   <li><b>主轴倍率:" + item.act_spindle_override_0 + "</b></li>"
+                    + "   <li><b>进给速度:" + item.act_feed_speed_0 + "</b></li>"
+                    + "   <li><b>进给倍率:" + item.act_feed_override_0 + "</b></li>"
+                    + "   <li><b>采集时间:</b></li>"
+                    + "   <li><b>&nbsp;" + item.read_time + "</b></li>"
+                    + " </ul>"
+                + " </td>";
+                */
+
+            var RunState = ""; RunClass = ""; RunImage = ""; Content = ""; ProgramName = "";
+            if (item.run_state == "0") { RunState = "停机"; RunClass = "widget-user-header bg-gray";}
+            else if (item.run_state == "1") { RunState = "运行"; RunClass = "widget-user-header bg-green"; }
+            else if (item.run_state == "2") { RunState = "报警"; RunClass = "widget-user-header bg-red"; }
+            else if (item.run_state == "3") { RunState = "空闲"; RunClass = "widget-user-header bg-blue"; }
+            else { RunState = "暂停"; RunClass = "widget-user-header bg-orange";  }
+
+            if (item.machine_name == "VTC-160AN-1") { RunImage = "VTC-160AN-1.jpg"; Content = "螺杆地脚"; ProgramName = "00071"; }
+            else if (item.machine_name == "VTC-160AN-2") { RunImage = "VTC-160AN-1.jpg"; Content = "盖板"; ProgramName = "O0005"; }
+            else if (item.machine_name == "VTC-2PC-1") { RunImage = "VTC-2PC.jpg"; Content = "调整块"; ProgramName = "O0006"; }
+            else if (item.machine_name == "VTC-2PC-2") { RunImage = "VTC-2PC.jpg"; Content = "调整块"; ProgramName = "O0006"; }
+            else if (item.machine_name == "VTC-20C") { RunImage = "VTC-20C.jpg"; Content = "垫圈"; ProgramName = "00013"; }
+            else if (item.machine_name == "VTC-200BN-1") { RunImage = "VTC-200BN.jpg"; Content = "垫圈"; ProgramName = "00013"; }
+            else { RunImage = "VTC-16A.jpg"; Content = "轨道"; ProgramName = "00014"; }
+            
+            tr_txt += "<div class=\"col-md-3\" style=\"background-color:rgba(22, 25, 48, 1);width:25%;\">"
+                + "<div class=\"box box-widget widget-user-2\">"
+                + "<div class=\"" + RunClass + "\">"
+                + "<div class=\"widget-user-image\">"
+                + "<img class=\"img-circle\" src=\"../../Areas/LR_ReportModule/Images/Content/images/" + RunImage + "\" alt=\"User Avatar\">"
+                + " </div>"
+                + "<h3 class=\"widget-user-username\" style=\"font-size:20px;color:#fff;padding-top:20px;\">" + item.machine_name + "</h3>"
+                + " <h5 class=\"widget-user-desc\" style=\"color:#fff;padding-top:20px;\">运行状态：" + RunState + "</h5>"
+                + "</div>"
+                + "<div class=\"box-body\" style=\"color: rgb(0, 176, 255);background-color:rgba(22, 25, 48, 1);\">"
+                + " <table class=\"table table-bordered\">"
+                + "<tr>"
+                + "<td>1.</td>"
+                + "<td>作业内容</td>"
+                + "<td><span class=\"badge bg-red\">" + Content + "</span></td>"
+                + "</tr>"
+  		+ "<tr>"
+                + "<td>2.</td>"
+                + "<td>程序号</td>"
+                + "<td><span class=\"badge bg-green\">" + ProgramName + "</span></td>"
+                + " </tr>"
+                + "<tr>"
+                + " <td>3.</td>"
+                + "<td>日累计运行时长(分)</td>"
+                + "<td><span class=\"badge bg-yellow\">" + Math.ceil(Math.random() * 10) * 87 + "</span></td>"
+                + " </tr>"
+                + "<tr>"
+                + "<td>4.</td>"
+                + "<td>日累计停机时长(分)</td > "
+                + "<td><span class=\"badge bg-light-blue\">" + Math.floor(Math.random() * 10) * 87 + "</span></td>"
+                + "</tr>"
+                + "</table>"
+                + "</div>"
+                + "</div>"
+                + " </div>";
+
+            if ((i+1)%4==0) {
+                tr_txt += "</div></div><div class=\"box\"><div class=\"row\">";
+            }
+            else {  
+               // tr_txt += "</div></div>";
+            }
+           
+        });
+        target.append(tr_txt);
+    }
+    function processRealNum(data) {
+        var target1 = $("#td_state1");
+        var target2 = $("#td_state2");
+        var target3 = $("#td_state3");
+        var target4 = $("#td_state4");
+        var target5 = $("#td_state5");
+        target1.empty();
+        target2.empty();
+        target3.empty();
+        target4.empty();
+        target5.empty();
+        var run_num = 0;
+        var alarm_num = 0;
+        var ready_num = 0;
+        var stop_num = 0;
+        var free_num = 0;
+        $.each(data, function (i, item) {
+            //alert(item.run_num);
+            if (item.run_state == "0") { stop_num = item.run_num;};
+            if (item.run_state == "1") { run_num = item.run_num; };
+            if (item.run_state == "2") { alarm_num = item.run_num; };
+            if (item.run_state == "3") { ready_num = item.run_num; };
+            if (item.run_state == "4") { free_num = item.run_num; };
+        });
+        target1.append(run_num);
+        target2.append(stop_num);
+        target5.append(ready_num);
+        target4.append(alarm_num);
+        target3.append(free_num);
+    }
+</script>

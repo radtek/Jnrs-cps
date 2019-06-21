@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "报警信息汇总";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" style="padding:0;line-height:38px;text-align:center;font-size:20px;font-weight:bold;color:#333;" >
+        <span></span>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_machine_info" >
+        <div class="lr-form-item-title">设备名称</div>
+        <textarea id="machine_name" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_alarm_history" >
+        <div class="lr-form-item-title">报警号</div>
+        <textarea id="alarm_no" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_alarm_history" >
+        <div class="lr-form-item-title">报警信息</div>
+        <textarea id="alarm_msg" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_alarm_history" >
+        <div class="lr-form-item-title">日期</div>
+        <textarea id="calc_date" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="tb_alarm_history" >
+        <div class="lr-form-item-title">采集时间</div>
+        <textarea id="read_time" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_LGManager/Views/AlarmMsg/Form.js")
