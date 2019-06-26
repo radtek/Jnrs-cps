@@ -34,6 +34,8 @@ namespace Learun.Application.Report
         DataTable GetReportData(string dataSourceId, string strSql);
         DataTable GetReportData2(string dataSourceId, string strSql);
         DataTable GetReportData3(string dataSourceId, string strSql);
+        DataTable GetReportData4(string dataSourceId, string strSql);
+        DataTable GetReportDataOEE(string dataSourceId, string strSql);
         /// <summary>
         /// 获取实体
         /// </summary>

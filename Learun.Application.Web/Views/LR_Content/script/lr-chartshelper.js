@@ -118,6 +118,7 @@ $.LoadReport = function (options) {
             if (data.tempStyle == 1) {
                 if (data.listData.length > 0) {
                     $list = $('<div id="gridtable" class="lr-layout-body"></div>');
+                    options.element.empty();
                     options.element.append($list);
                     DrawList(data.listData, $list);
                 } else {

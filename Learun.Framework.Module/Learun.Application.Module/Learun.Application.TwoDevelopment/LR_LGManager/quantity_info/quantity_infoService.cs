@@ -54,7 +54,7 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
                     dp.Add("group_no", "%" + queryParam["group_no"].ToString() + "%", DbType.String);
                     strSql.Append(" AND t.group_no Like @group_no ");
                 }
-                return this.BaseRepository("BaseDb").FindList<tb_quantity_infoEntity>(strSql.ToString(),dp, pagination);
+                return this.BaseRepository("BaseDb1").FindList<tb_quantity_infoEntity>(strSql.ToString(),dp, pagination);
             }
             catch (Exception ex)
             {
@@ -78,7 +78,7 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
         {
             try
             {
-                return this.BaseRepository("BaseDb").FindEntity<tb_quantity_infoEntity>(keyValue);
+                return this.BaseRepository("BaseDb1").FindEntity<tb_quantity_infoEntity>(keyValue);
             }
             catch (Exception ex)
             {
@@ -106,7 +106,7 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
         {
             try
             {
-                this.BaseRepository("BaseDb").Delete<tb_quantity_infoEntity>(t=>t.id == keyValue);
+                this.BaseRepository("BaseDb1").Delete<tb_quantity_infoEntity>(t=>t.id == keyValue);
             }
             catch (Exception ex)
             {
@@ -133,12 +133,12 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
                 if (!string.IsNullOrEmpty(keyValue))
                 {
                     entity.Modify(keyValue);
-                    this.BaseRepository("BaseDb").Update(entity);
+                    this.BaseRepository("BaseDb1").Update(entity);
                 }
                 else
                 {
                     entity.Create();
-                    this.BaseRepository("BaseDb").Insert(entity);
+                    this.BaseRepository("BaseDb1").Insert(entity);
                 }
             }
             catch (Exception ex)

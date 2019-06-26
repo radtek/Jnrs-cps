@@ -144,14 +144,17 @@ namespace Learun.Application.Web.Areas.LR_ReportModule.Controllers
                           + " order by sp.calc_date, sp.day_time asc";
                          }
             else if (reportId == "f43e6528-4f04-454f-9922-ead91c938add") {//年产量统计
-                sql = "select LEFT(sp.wshift_date, 4) as 年 ,mi.group_name as 设备组,"
-                        + " mi.machine_name as 设备号, sum(sp.plan_prod_num) as 计划产量,sum(sp.prod_num) as 实际产量, sum(sp.pass_prod_num) as 合格产量"
-                        + " from tb_curday_prod_num sp inner join  tb_dict_parameter dp on sp.day_time = dp.data_setup"
-                        + " left join vw_machine_info mi on sp.group_id = mi.group_id and mi.machine_id = sp.machine_id"
-                        + " where dp.param_type = 'DayTime' and dp.prw_type = 'ToOut' and sp.is_stage = 'Hour' and sp.machine_id =  " + machine_id + "and sp.group_id = " + group_id + ""
-                        + " and sp.wshift_date <= '" + EndTime.ToString("yyyyMMdd") + "' AND sp.wshift_date >= '" + StartTime.ToString("yyyyMMdd") + "'"
-                        + " group by LEFT(sp.wshift_date, 4),mi.machine_name,mi.group_name"
-                        + " order by  LEFT(sp.wshift_date, 4) asc";
+                sql = "  select LEFT(sp.wshift_date, 4) as 年 ,mi.group_name as 设备组, mi.machine_name as 设备号, "
+                      + " sum(tpd.plan_day) as 计划产量,sum(sp.prod_num) as 实际产量, sum(sp.pass_prod_num) as 合格产量"
+                      + " from tb_curday_prod_num sp"
+                      + " left"
+                      + " join vw_machine_info mi on sp.group_id = mi.group_id and mi.machine_id = sp.machine_id"
+                      + " left join tb_plan_day_data tpd on sp.calc_date = tpd.calc_date"
+                      + " where sp.machine_id = " + machine_id + ""
+                      + " and sp.is_stage = 'Day'"
+                      + " and sp.group_id =" + group_id + " and sp.wshift_date <= '" + EndTime.ToString("yyyyMMdd") + "' AND sp.wshift_date >= '" + StartTime.ToString("yyyyMMdd") + "'"
+                      + " group by LEFT(sp.wshift_date, 4),mi.machine_name,mi.group_name"
+                      + " order by LEFT(sp.wshift_date, 4) asc";
 
                 sql_chart = "select LEFT(sp.wshift_date, 4) as name ,sum(sp.prod_num) as value, "
                         + " mi.machine_name as 设备号,mi.group_name as 设备组, sum(sp.plan_prod_num) as 计划产量,sum(sp.pass_prod_num) as 合格产量"
@@ -183,10 +186,11 @@ namespace Learun.Application.Web.Areas.LR_ReportModule.Controllers
             else if (reportId == "6ac82b75-c508-4237-8ec9-bae1df8066cb")//月产量统计
             {
                 sql = "select LEFT(sp.wshift_date, 6) as 月份 , mi.group_name as 设备组, "
-                       + " mi.machine_name as 设备号,sum(sp.plan_prod_num) as 计划产量,sum(sp.prod_num) as 实际产量,sum(sp.pass_prod_num) as 合格产量"
-                       + " from tb_curday_prod_num sp inner join  tb_dict_parameter dp on sp.day_time = dp.data_setup"
+                       + " mi.machine_name as 设备号,sum(tpd.plan_day) as 计划产量,sum(sp.prod_num) as 实际产量,sum(sp.pass_prod_num) as 合格产量"
+                       + " from tb_curday_prod_num sp "
                        + " left join vw_machine_info mi on sp.group_id = mi.group_id and mi.machine_id = sp.machine_id"
-                       + " where dp.param_type = 'DayTime' and dp.prw_type = 'ToOut' and sp.is_stage = 'Hour' and sp.machine_id = " + machine_id + "and sp.group_id = " + group_id + ""
+                       + " left join tb_plan_day_data tpd on sp.calc_date=tpd.calc_date "
+                       + " where sp.is_stage = 'Day' and sp.machine_id = " + machine_id + "and sp.group_id = " + group_id + ""
                        + " and sp.wshift_date <= '" + EndTime.ToString("yyyyMMdd") + "' AND sp.wshift_date >= '" + StartTime.ToString("yyyyMMdd") + "'"
                        + " group by LEFT(sp.wshift_date, 6),mi.machine_name,mi.group_name"
                        + " order by LEFT(sp.wshift_date, 6) asc";
@@ -218,6 +222,36 @@ namespace Learun.Application.Web.Areas.LR_ReportModule.Controllers
                        + " and sp.wshift_date <='" + EndTime.ToString("yyyyMMdd") + "' AND sp.wshift_date >= '"
                        + StartTime.ToString("yyyyMMdd") + "'  order by wshift_date asc,b.start_time";
                             }
+            else if (reportId == "6628efa3-8ba5-47c7-be6a-58dd05df9661") //产量报表
+            {
+                sql = "  select sum(tcp.prod_num)as prod_num,tcp.day_time,tcp.wshift_date,tcp.group_id,tcp.wshift_id"
+                      + " from tb_curday_prod_num tcp"
+                      + " where tcp.is_stage = 'Hour'"
+                      + " and wshift_date <='" + EndTime.ToString("yyyyMMdd") + "' AND"
+                      + " wshift_date >= '"+StartTime.ToString("yyyyMMdd") + "'"
+                      + " group by tcp.day_time,tcp.wshift_date,tcp.group_id,tcp.wshift_id"
+                      + " order by tcp.wshift_date desc";
+            }
+            else if(reportId== "bdcda43c-c277-400a-979f-a925270c9171")//OEE报表
+            {
+                sql = "  select tcp.group_id ,tcp.prod_num,tcp.wshift_date,trs.time_second as run_time_second,"
+                      + " (case when tqi.unqualified_no is null then 0 else tqi.unqualified_no end) as unqualified_no"
+                      + " ,(case when tqi.unqualified_no is null then tcp.prod_num else (tcp.prod_num - tqi.unqualified_no) end )as qualified_no"
+                      + " from tb_curday_prod_num tcp"
+                      + " left join (select sum(trs.run_dur) as time_second ,trs.machine_id,trs.wshift_date"
+                      + " from tb_run_state_seque trs"
+                      + " where trs.run_state = '1'"
+                      + " group by trs.machine_id,trs.wshift_date"
+                      + " )trs on tcp.machine_id = trs.machine_id and tcp.wshift_date = trs.wshift_date"
+                      + " left join("
+                      + " select tqi.group_no, tqi.unqualified_no, convert(varchar(8) ,tqi.product_time, 112) as wshift_date"
+                      + " from tb_quantity_info tqi)tqi on tcp.wshift_date = tqi.wshift_date"
+                      + " where is_stage = 'Day'"
+                      + " and tcp.wshift_date <= '" + EndTime.ToString("yyyyMMdd") + "' and tcp.wshift_date >= '" + StartTime.ToString("yyyyMMdd") + "'"
+                      + " and tcp.machine_id = " + machine_id + ""
+                      + " order by tcp.wshift_date";
+            }
+
             else if (reportId == "8d76ac76-fe7a-4b7f-af71-1250851d11df")//设备状态统计
             {
                 if (machine_id == "0")
@@ -299,6 +333,7 @@ namespace Learun.Application.Web.Areas.LR_ReportModule.Controllers
                         + EndTime.ToString("yyyyMMdd") + "' AND calc_date >= '" + StartTime.ToString("yyyyMMdd") + "' and sp.group_id =" 
                         + group_id+ " group by mi.machine_name ";
             }
+           
             else
             {
                /* //ZK
@@ -340,6 +375,26 @@ namespace Learun.Application.Web.Areas.LR_ReportModule.Controllers
                     chartType = reportEntity.F_TempType,
                     chartData = reportTempIBLL.GetReportData(paramJson.F_DataSourceId.ToString(), sql_chart),
                     listData = reportTempIBLL.GetReportData3(paramJson.F_DataSourceId.ToString(), sql)
+                };
+                return Content(data.ToJson());
+            }
+            else if (reportId == "6628efa3-8ba5-47c7-be6a-58dd05df9661") //产量报表
+            {
+                var data = new
+                {
+                    tempStyle = reportEntity.F_TempStyle,
+                    chartType = reportEntity.F_TempType,
+                    listData = reportTempIBLL.GetReportData4(paramJson.F_DataSourceId.ToString(), sql)
+                };
+                return Content(data.ToJson());
+            }
+            else if (reportId == "bdcda43c-c277-400a-979f-a925270c9171")//OEE报表
+            {
+                var data = new
+                {
+                    tempStyle = reportEntity.F_TempStyle,
+                    chartType = reportEntity.F_TempType,
+                    listData = reportTempIBLL.GetReportDataOEE(paramJson.F_DataSourceId.ToString(), sql)
                 };
                 return Content(data.ToJson());
             }

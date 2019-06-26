@@ -69,7 +69,7 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
                     dp.Add("endTime", queryParam["EndTime"].ToDate(), DbType.DateTime);
                     strSql.Append(" AND ( t.read_time >= @startTime AND t.read_time <= @endTime ) ");
                 }
-                return this.BaseRepository("BaseDb").FindList<tb_plan_detail_dataEntity>(strSql.ToString(),dp, pagination);
+                return this.BaseRepository("BaseDb1").FindList<tb_plan_detail_dataEntity>(strSql.ToString(),dp, pagination);
             }
             catch (Exception ex)
             {
@@ -93,7 +93,7 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
         {
             try
             {
-                return this.BaseRepository("BaseDb").FindEntity<tb_plan_detail_dataEntity>(keyValue);
+                return this.BaseRepository("BaseDb1").FindEntity<tb_plan_detail_dataEntity>(keyValue);
             }
             catch (Exception ex)
             {
@@ -121,7 +121,7 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
         {
             try
             {
-                this.BaseRepository("BaseDb").Delete<tb_plan_detail_dataEntity>(t=>t.id == keyValue);
+                this.BaseRepository("BaseDb1").Delete<tb_plan_detail_dataEntity>(t=>t.id == keyValue);
             }
             catch (Exception ex)
             {
@@ -148,12 +148,14 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
                 if (!string.IsNullOrEmpty(keyValue))
                 {
                     entity.Modify(keyValue);
-                    this.BaseRepository("BaseDb").Update(entity);
+                    entity.group_id = 10;
+                    this.BaseRepository("BaseDb1").Update(entity);
                 }
                 else
                 {
                     entity.Create();
-                    this.BaseRepository("BaseDb").Insert(entity);
+                    entity.group_id = 10;
+                    this.BaseRepository("BaseDb1").Insert(entity);
                 }
             }
             catch (Exception ex)
