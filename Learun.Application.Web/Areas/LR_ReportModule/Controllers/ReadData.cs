@@ -264,6 +264,7 @@ namespace MachineDesign.Models
             ProductSchedual ps = new ProductSchedual();
             List<ProductSchedual> data = new List<ProductSchedual>();
             string strSql = "";
+            string sql = null;
 
             int dayNum = Convert.ToInt32(end_date.ToString("yyyyMMdd")) - Convert.ToInt32(start_date.ToString("yyyyMMdd")) + 1;
 
@@ -286,6 +287,23 @@ namespace MachineDesign.Models
                      + " where wshift_date <= '" + end_date.ToString("yyyyMMdd") + "' AND wshift_date >=  '" + start_date.ToString("yyyyMMdd")
                      + "' and machine_id = " + machine_id + " and calc_stage='" + dayorshift + "'"
                      + "  order by wshift_date";
+
+                sql = "  select tcp.group_id ,tcp.prod_num,tcp.wshift_date,trs.time_second as run_time_second,"
+                      + " (case when tqi.unqualified_no is null then 0 else tqi.unqualified_no end) as unqualified_no"
+                      + " ,(case when tqi.unqualified_no is null then tcp.prod_num else (tcp.prod_num - tqi.unqualified_no) end )as qualified_no"
+                      + " from tb_curday_prod_num tcp"
+                      + " left join (select sum(trs.run_dur) as time_second ,trs.machine_id,trs.wshift_date"
+                      + " from tb_run_state_seque trs"
+                      + " where trs.run_state = '1'"
+                      + " group by trs.machine_id,trs.wshift_date"
+                      + " )trs on tcp.machine_id = trs.machine_id and tcp.wshift_date = trs.wshift_date"
+                      + " left join("
+                      + " select tqi.group_no, tqi.unqualified_no, convert(varchar(8) ,tqi.product_time, 112) as wshift_date"
+                      + " from tb_quantity_info tqi)tqi on tcp.wshift_date = tqi.wshift_date"
+                      + " where is_stage = 'Day'"
+                      + " and tcp.wshift_date <= '" + end_date.ToString("yyyyMMdd") + "' and tcp.wshift_date >= '" + start_date.ToString("yyyyMMdd") + "'"
+                      + " and tcp.machine_id = " + machine_id + ""
+                      + " order by tcp.wshift_date";
             }
             else
             {
@@ -294,26 +312,58 @@ namespace MachineDesign.Models
                      + " where a.wshift_date <= '" + end_date.ToString("yyyyMMdd") + "' AND a.wshift_date >=  '" + start_date.ToString("yyyyMMdd")
                      + "' and a.machine_id = " + machine_id + " and a.calc_stage='" + dayorshift + "'"
                      + "  order by a.wshift_date";
+
+                sql = "  select tcp.group_id ,tcp.prod_num,tcp.wshift_date+tsi.wshift_name as wshift_date,trs.time_second as run_time_second,"
+                      + " (case when tqi.unqualified_no is null then 0 else tqi.unqualified_no end) as unqualified_no"
+                      + " ,(case when tqi.unqualified_no is null then tcp.prod_num else (tcp.prod_num - tqi.unqualified_no) end )as qualified_no"
+                      + " from tb_curday_prod_num tcp"
+                      + " left join (select sum(trs.run_dur) as time_second ,trs.machine_id,trs.wshift_date"
+                      + " from tb_run_state_seque trs"
+                      + " where trs.run_state = '1'"
+                      + " group by trs.machine_id,trs.wshift_date"
+                      + " )trs on tcp.machine_id = trs.machine_id and tcp.wshift_date = trs.wshift_date"
+                      + " left join("
+                      + " select tqi.group_no, tqi.unqualified_no, convert(varchar(8) ,tqi.product_time, 112) as wshift_date"
+                      + " from tb_quantity_info tqi)tqi on tcp.wshift_date = tqi.wshift_date"
+                      + " inner join tb_shift_info tsi on tcp.wshift_id=tsi.wshift_id"
+                      + " where is_stage = 'Shift'"
+                      + " and tcp.wshift_date <= '" + end_date.ToString("yyyyMMdd") + "' and tcp.wshift_date >= '" + start_date.ToString("yyyyMMdd") + "'"
+                      + " and tcp.machine_id = " + machine_id + ""
+                      + " order by tcp.wshift_date";
             }
             try
             {
 
                 dtInfo1 = getStrSqlData("", strSql).Copy();
+                dtInfo2 = getStrSqlData("", sql).Copy();
             }
             catch (Exception ex)
             {
                 LogMsg = logMsg + ":" + ex.Message;
             }
-
+            string OEE = null;
             if (dtInfo1.Rows.Count > 0)
             {
                 for (int i = 0; i < dtInfo1.Rows.Count; i++)
                 {
                     sjList.Add(dtInfo1.Rows[i]["calc_date"].ToString());
-                    number[i] = Convert.ToInt32(Convert.ToDouble(dtInfo1.Rows[i]["time_work_rate"])*100);                  //时间开动率
-                    number1[i] = Convert.ToInt32(Convert.ToDouble(dtInfo1.Rows[i]["pass_prod_rate"]) * 100);                  //合格品率
-                    number2[i] = Convert.ToInt32(Convert.ToDouble(dtInfo1.Rows[i]["perfrm_work_rate"]) * 100);                  //性能开动率
-                    number3[i] = Convert.ToInt32(Convert.ToDouble(dtInfo1.Rows[i]["oee_calculate"]) * 100);                  //设备综合效率
+                    number[i] = Convert.ToInt32(Convert.ToDouble(dtInfo1.Rows[i]["time_work_rate"].ToString().IsEmpty()?0:dtInfo1.Rows[i]["time_work_rate"])*100);                  //时间开动率
+                    number1[i] = Convert.ToInt32(Convert.ToDouble(dtInfo1.Rows[i]["pass_prod_rate"].ToString().IsEmpty() ? 0:dtInfo1.Rows[i]["pass_prod_rate"]) * 100);                  //合格品率
+                    number2[i] = Convert.ToInt32(Convert.ToDouble(dtInfo1.Rows[i]["perfrm_work_rate"].ToString().IsEmpty() ? 0:dtInfo1.Rows[i]["perfrm_work_rate"]) * 100);                  //性能开动率
+                    //Convert.ToInt32(Convert.ToDouble(dtInfo1.Rows[i]["oee_calculate"].ToString().IsEmpty() ? 0:dtInfo1.Rows[i]["oee_calculate"]) * 100);                  //设备综合效率
+                    for(int j = 0; j < dtInfo2.Rows.Count; j++)
+                    {
+                        if (dtInfo1.Rows[i]["calc_date"].ToString().Equals(dtInfo2.Rows[j]["wshift_date"]))
+                        {
+                            var qualified_no = Convert.ToDouble(dtInfo2.Rows[j]["qualified_no"].ToString().IsEmpty() ? "0" : dtInfo2.Rows[j]["qualified_no"].ToString());
+                            var prod_num = Convert.ToDouble(dtInfo2.Rows[j]["prod_num"].ToString().IsEmpty() ? "0" : dtInfo2.Rows[j]["prod_num"].ToString());
+                            var run_time_second = Convert.ToDouble(dtInfo2.Rows[j]["run_time_second"].ToString().IsEmpty() ? "0" : dtInfo2.Rows[j]["run_time_second"].ToString());
+                            OEE = prod_num == 0 ? "0" : ((qualified_no / prod_num) * (run_time_second / (24 * 60 * 60) * 100)).ToString("0");
+                            break;
+                        }
+                       
+                    }
+                    number3[i] = Convert.ToInt32(OEE);
                 }
                 ps.data1 = number;
                 ps.data2 = number1;

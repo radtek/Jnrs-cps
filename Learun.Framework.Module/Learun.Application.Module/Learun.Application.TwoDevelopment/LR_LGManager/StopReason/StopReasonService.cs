@@ -60,7 +60,7 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
                     dp.Add("stop_reason",queryParam["stop_reason"].ToString(), DbType.String);
                     strSql.Append(" AND t.stop_reason = @stop_reason ");
                 }
-                return this.BaseRepository("BaseDb").FindList<tb_stop_reason_hisEntity>(strSql.ToString(),dp, pagination);
+                return this.BaseRepository("BaseDb1").FindList<tb_stop_reason_hisEntity>(strSql.ToString(),dp, pagination);
             }
             catch (Exception ex)
             {
@@ -84,7 +84,7 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
         {
             try
             {
-                return this.BaseRepository("BaseDb").FindEntity<tb_stop_reason_hisEntity>(keyValue);
+                return this.BaseRepository("BaseDb1").FindEntity<tb_stop_reason_hisEntity>(keyValue);
             }
             catch (Exception ex)
             {
@@ -112,7 +112,7 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
         {
             try
             {
-                this.BaseRepository("BaseDb").Delete<tb_stop_reason_hisEntity>(t=>t.id == keyValue);
+                this.BaseRepository("BaseDb1").Delete<tb_stop_reason_hisEntity>(t=>t.id == keyValue);
             }
             catch (Exception ex)
             {
@@ -139,12 +139,12 @@ namespace Learun.Application.TwoDevelopment.LR_LGManager
                 if (!string.IsNullOrEmpty(keyValue))
                 {
                     entity.Modify(keyValue);
-                    this.BaseRepository("BaseDb").Update(entity);
+                    this.BaseRepository("BaseDb1").Update(entity);
                 }
                 else
                 {
                     entity.Create();
-                    this.BaseRepository("BaseDb").Insert(entity);
+                    this.BaseRepository("BaseDb1").Insert(entity);
                 }
             }
             catch (Exception ex)

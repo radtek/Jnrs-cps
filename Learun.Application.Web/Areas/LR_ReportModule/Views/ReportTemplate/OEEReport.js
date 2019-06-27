@@ -80,7 +80,7 @@
                                     trigger: 'axis'
                                 },
                                 legend: {
-                                    data: ['时间开动率', '性能开动率', '合格品率', '设备综合效率(OEE)']
+                                    data: [/*'时间开动率', '性能开动率', '合格品率',*/ '设备综合效率(OEE)']
                                 },
                                 grid: {
                                     left: '3%',
@@ -102,78 +102,78 @@
                                     type: 'value'
                                 },
                                 series: [
-                                    {
-                                        itemStyle: {
-                                            normal: {
-                                                label: {
-                                                    show: true,
-                                                    position: 'top',
-                                                    textStyle: {
-                                                        color: '#615a5a'
-                                                    },
-                                                    formatter: function (params) {
-                                                        if (params.value == 0) {
-                                                            return '';
-                                                        } else {
-                                                            return params.value;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        name: '时间开动率',
-                                        type: 'line',
-                                        stack: '总量',
-                                        data: item.data1
-                                    },
-                                    {
-                                        itemStyle: {
-                                            normal: {
-                                                label: {
-                                                    show: true,
-                                                    position: 'top',
-                                                    textStyle: {
-                                                        color: '#615a5a'
-                                                    },
-                                                    formatter: function (params) {
-                                                        if (params.value == 0) {
-                                                            return '';
-                                                        } else {
-                                                            return params.value;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        name: '性能开动率',
-                                        type: 'line',
-                                        stack: '总量',
-                                        data: item.data3
-                                    },
-                                    {
-                                        itemStyle: {
-                                            normal: {
-                                                label: {
-                                                    show: true,
-                                                    position: 'top',
-                                                    textStyle: {
-                                                        color: '#615a5a'
-                                                    },
-                                                    formatter: function (params) {
-                                                        if (params.value == 0) {
-                                                            return '';
-                                                        } else {
-                                                            return params.value;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        name: '合格品率',
-                                        type: 'line',
-                                        stack: '总量',
-                                        data: item.data2
-                                    },
+                                    //{
+                                    //    itemStyle: {
+                                    //        normal: {
+                                    //            label: {
+                                    //                show: true,
+                                    //                position: 'top',
+                                    //                textStyle: {
+                                    //                    color: '#615a5a'
+                                    //                },
+                                    //                formatter: function (params) {
+                                    //                    if (params.value == 0) {
+                                    //                        return '';
+                                    //                    } else {
+                                    //                        return params.value;
+                                    //                    }
+                                    //                }
+                                    //            }
+                                    //        }
+                                    //    },
+                                    //    name: '时间开动率',
+                                    //    type: 'line',
+                                    //    stack: '总量',
+                                    //    data: item.data1
+                                    //},
+                                    //{
+                                    //    itemStyle: {
+                                    //        normal: {
+                                    //            label: {
+                                    //                show: true,
+                                    //                position: 'top',
+                                    //                textStyle: {
+                                    //                    color: '#615a5a'
+                                    //                },
+                                    //                formatter: function (params) {
+                                    //                    if (params.value == 0) {
+                                    //                        return '';
+                                    //                    } else {
+                                    //                        return params.value;
+                                    //                    }
+                                    //                }
+                                    //            }
+                                    //        }
+                                    //    },
+                                    //    name: '性能开动率',
+                                    //    type: 'line',
+                                    //    stack: '总量',
+                                    //    data: item.data3
+                                    //},
+                                    //{
+                                    //    itemStyle: {
+                                    //        normal: {
+                                    //            label: {
+                                    //                show: true,
+                                    //                position: 'top',
+                                    //                textStyle: {
+                                    //                    color: '#615a5a'
+                                    //                },
+                                    //                formatter: function (params) {
+                                    //                    if (params.value == 0) {
+                                    //                        return '';
+                                    //                    } else {
+                                    //                        return params.value;
+                                    //                    }
+                                    //                }
+                                    //            }
+                                    //        }
+                                    //    },
+                                    //    name: '合格品率',
+                                    //    type: 'line',
+                                    //    stack: '总量',
+                                    //    data: item.data2
+                                    //},
                                     {
                                         itemStyle: {
                                             normal: {
